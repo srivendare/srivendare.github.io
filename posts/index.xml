@@ -20,5 +20,42 @@
       <description>Test</description>
     </item>
     
+    <item>
+      <title>Airbnb London</title>
+      <link>https://srivendare.github.io/posts/london-airbnb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://srivendare.github.io/posts/london-airbnb/</guid>
+      <description>Description of Data Data type The data is sourced from the Inside Airbnb , a publicly Airbnb data provider. The dataset comprises of three main tables:
+listings - Detailed listings attributes including price (continuous), location, room_type (categorical), neighbourhood (categorical), ratings (continuous) among others. reviews - Detailed reviews given by the guests with 6 attributes. Key attributes include date (datetime), listing_id (discrete), reviewer_id (discrete) and comment (textual). calendar - Provides details about booking for the next year by listing.</description>
+    </item>
+    
+    <item>
+      <title>Does Brexit impact housing market?</title>
+      <link>https://srivendare.github.io/posts/brexit-housing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://srivendare.github.io/posts/brexit-housing/</guid>
+      <description>Introcution On 23 June 2016, the United Kingdom voted on a referendum to leave the European Union. Pundits and scholars alike attempted to predict the immediate economic impact of “Brexit”, with varying degrees of success. An analysis published by the Treasury in May 2016 indicated that market uncertainty due to Brexit would lead to an increase in lending costs, thus leading to a decrease in overall house prices. Within two years, house prices were projected to fall between 10-18% - a statistic hungrily reported by the media as both a catastrophe and an opportunity .</description>
+    </item>
+    
+    <item>
+      <title>Excise for Bubble Chart</title>
+      <link>https://srivendare.github.io/posts/bubble-chart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://srivendare.github.io/posts/bubble-chart/</guid>
+      <description>Import Data #Import China shapefile: china_map&amp;lt;-readOGR(&amp;quot;/Users/apple/Desktop/CASA/GIS/As 1/DataWarehouse-master/Rstudy /CHN_adm/bou2_4p.shp&amp;quot;)  data1&amp;lt;- china_map@data data2&amp;lt;- data.frame(id=row.names(data1),data1) china_map1 &amp;lt;- fortify(china_map)  #Transffom and join the data: china_map1 &amp;lt;- fortify(china_map) china_map_data &amp;lt;- join(china_map1,data2, type = &amp;quot;full&amp;quot;) mydata &amp;lt;- read.csv(&amp;quot;/Users/apple/Desktop/CASA/GIS/As 1/drnum.ke.csv&amp;quot;) china_data &amp;lt;- join(china_map_data, mydata, type=&amp;quot;full&amp;quot;) #Get the province coordinates : province_city &amp;lt;- read.csv(&amp;quot;/Users/apple/Desktop/CASA/GIS/As 1/chinaprovince.ke.csv &amp;quot;) # example 1 : Point chart on map ggplot(china_data,aes(long,lat))+ geom_polygon(aes(group=group),fill=&amp;quot;white&amp;quot;,colour=&amp;quot;grey60&amp;quot;)+ geom_point(data=province_city,aes(x=jd,y=wd),colour=&amp;quot;red&amp;quot;)+ coord_map(&amp;quot;polyconic&amp;quot;) + theme( panel.grid = element_blank(), panel.background = element_blank(), axis.</description>
+    </item>
+    
+    <item>
+      <title>The Spatial Distribution Character of Starbucks in Shanghai</title>
+      <link>https://srivendare.github.io/posts/shanghai-starbucks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://srivendare.github.io/posts/shanghai-starbucks/</guid>
+      <description>Introduction The aim of this article is to analysis the spatial distribution characteristics of Starbucks, the retail business coffee shop, in Shanghai. For the purpose of this analysis ArcGIS software is used. The data employed in this study include the number of Starbucks stores in Shanghai, their addresses, geographical coordinates and their Shanghai administrative districts. Store location data is derived from Opendatasoft.com and the Shanghai geometric shapefile from the ArcGIS official website.</description>
+    </item>
+    
   </channel>
 </rss>

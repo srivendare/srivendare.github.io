@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site  | The Spatial Distribution Character of Starbucks in Shanghai</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.6" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="The Spatial Distribution Character of Starbucks in Shanghai" />
+<meta property="og:description" content="Introduction The aim of this article is to analysis the spatial distribution characteristics of Starbucks, the retail business coffee shop, in Shanghai. For the purpose of this analysis ArcGIS software is used. The data employed in this study include the number of Starbucks stores in Shanghai, their addresses, geographical coordinates and their Shanghai administrative districts. Store location data is derived from Opendatasoft.com and the Shanghai geometric shapefile from the ArcGIS official website." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://srivendare.github.io/posts/shanghai-starbucks/" />
+
+
+<meta itemprop="name" content="The Spatial Distribution Character of Starbucks in Shanghai">
+<meta itemprop="description" content="Introduction The aim of this article is to analysis the spatial distribution characteristics of Starbucks, the retail business coffee shop, in Shanghai. For the purpose of this analysis ArcGIS software is used. The data employed in this study include the number of Starbucks stores in Shanghai, their addresses, geographical coordinates and their Shanghai administrative districts. Store location data is derived from Opendatasoft.com and the Shanghai geometric shapefile from the ArcGIS official website.">
+
+
+
+<meta itemprop="wordCount" content="1348">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Spatial Distribution Character of Starbucks in Shanghai"/>
+<meta name="twitter:description" content="Introduction The aim of this article is to analysis the spatial distribution characteristics of Starbucks, the retail business coffee shop, in Shanghai. For the purpose of this analysis ArcGIS software is used. The data employed in this study include the number of Starbucks stores in Shanghai, their addresses, geographical coordinates and their Shanghai administrative districts. Store location data is derived from Opendatasoft.com and the Shanghai geometric shapefile from the ArcGIS official website."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://srivendare.github.io" class="f3 fw2 hover-white no-underline white-90 dib">
+      My New Hugo Site
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">The Spatial Distribution Character of Starbucks in Shanghai</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h2 id="introduction">Introduction</h2>
+
+<p>The aim of this article is to analysis the spatial distribution characteristics of Starbucks, the retail business coffee shop, in Shanghai. For the purpose of this analysis ArcGIS software is used. The data employed in this study include the number of Starbucks stores in Shanghai, their addresses, geographical coordinates and their Shanghai administrative districts. Store location data is derived from Opendatasoft.com and the Shanghai geometric shapefile from the ArcGIS official website. Through the combination of different software and geostaticmethods, this report gives the general distribution characteristics of Shanghai’s Starbucks stores and the general distribution regulations behind them.</p>
+
+<h3 id="methodology"><strong>Methodology</strong></h3>
+
+<p>Proximity analysis and Geostatistics tools are mainly used to explore the spatial distribution characteristics and location selection factors of Shanghai’s Starbucks stores. Firstly, the spatial distribution of Starbucks is shown with a heat map and studied using the nearest neighbour distance analysis and Ripley’s K function method. Secondly, buffer analysis is used to explore spatial distribution and service coverage. The location of a store is classified by spatial function in order to analyse its distribution structure. Finally, the standard
+deviational ellipse is used to analyse the spatial distribution direction of Starbucks.</p>
+
+<p><strong>Average Nearest Neighbour Analysis</strong></p>
+
+<p>This measures the degree of distribution dispersion, using a hypothesis testing method. It is derived from the ratio of the actual observed average distance R between the nearest pairs of points to the ideal average distance RE in the ideal random distribution model. According to the output of ArcGIS tools, whether the distribution of Shanghai Starbucks stores is uniform is determined.</p>
+
+<p><strong>Ripley&rsquo;s K function</strong></p>
+
+<p>Ripley&rsquo;s K function (multi-distance spatial clustering analysis) can show how the clustering or discretisation of point elements change relative to different distances. The function is given as (Bailey et al.,1995):</p>
+
+<p>It shows how spatial aggregation or discretion of location changes when the neighbourhood range is modified. This study uses Ripley&rsquo;s K function to analyse the basic distribution pattern characteristics of Starbucks stores in Shanghai.</p>
+
+<p><strong>Buffer analysis</strong></p>
+
+<p>Buffer analysis is used to determine the spatial proximity of different geographical locations. In this paper, it is used to measure the spatial aggregation and distribution pattern of Starbucks stores. However, there may be other reasons for the spatial distribution of Starbucks stores, such as transportation or commercial layout. According to the location information in the data, Starbucks store locations are classified by their spatial function. The research will combine this classification with buffer analysis in order to carry out an in-depth study of Starbucks spatial functional distribution structure.</p>
+
+<p><strong>Standard deviational ellipse</strong></p>
+
+<p>Standard deviational ellipse can understand the scattering range and direction of data. This method is widely used in the study of virus transmission and air pollution diffusion. According to the distribution of data, the standard deviational ellipse tool in ArcGIS can generate three ellipsis regions. It shows that in normal distribution, 68%, 95% and 99.7% of the data values will fall within one, two or three standard deviations, respectively. In this report, the direction of Starbucks stores data distribution is addressed by combining the data scatter plot with the long and short axis of the ellipse.</p>
+
+<h3 id="spatial-distribution-model"><strong>Spatial Distribution Model</strong></h3>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/147741226@N06/46834978244/in/dateposted-public/" title="8"><img src="https://live.staticflickr.com/7865/46834978244_c7aa695fb4_b.jpg" width="1024" height="797" alt="8"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>​                                   Figure 1. The Spatial Distribution of Starbucks Stores in Shanghai
+The spatial layout of Starbucks stores in Shanghai are shown in Figure 1. They present the characteristics of a cohesive distribution pattern. In Table 1, we can see that 66% of the 497 Starbucks stores in Shanghai are located in the districts of Pudong, Xuhui, Huangpu, Jing’an and Changning. In this paper, the 497 Starbucks stores in Shanghai are first analysed using Nearest Neighbour Analysis, a hypothesis testing-based method in ArcGIS. The zerohypothesis is the default as the distribution of Starbucks is random and uniform. In Table 2, the Z-score and the p-value are measures of statistical significance, which are required to determine whether a zero hypothesis is rejected or not. According to the Z score and p value in Table 2, there is sufficient evidence to negate the original hypothesis.</p>
+
+<p><img src="/Users/ruishang/Desktop/WX20190407-190651@2x.png" alt="WX20190407-190651@2x" /></p>
+
+<p>​                                Table 2. The Nearest Neighbour Ratio of Shanghai Starbucks
+The nearest neighbour ratio R of Starbucks stores is 825.<sup>13</sup>&frasl;<sub>5096</sub>.10=0.16. Its R value is far
+less than 1, indicating that the spatial layout of Shanghai Starbucks stores is in a cohesive
+distribution pattern.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/147741226@N06/46834978574/in/dateposted-public/" title="Ripley&#x27;s K"><img src="https://live.staticflickr.com/7880/46834978574_6ddfb07b5b_c.jpg" width="800" height="319" alt="Ripley&#x27;s K"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>​                                          Figure 2. The L Function of Starbucks Stores in Shanghai</p>
+
+<p>Ripley’s K function is used for further exploration of the distribution characteristics. Figure 2 shows the distance on the horizontal axis and the value of the L function on the vertical axis. If the specific distance L(d) is larger than the expected value (blue line), the cluster in degree of the distribution is higher than that of the random distribution of the distance (analysis scale). The observation value is larger than the upper limit of the confidence interval, the spatial clustering of the distance has statistical significance. The graph shows that the L(d) value is much greater than expected, which indicates that Starbucks stores are clustered in the urban area of Shanghai and that there is no evidence of random or uniform distribution in this scale.</p>
+
+<p><strong>Spatial Functional Structure of Shanghai Starbucks</strong></p>
+
+<p>In order to be able to discuss the regulations behind the clustered distribution, the spatial distribution of Starbucks stores in Shanghai are visualised and analysed with the help of buffer analysis and a spatial functional classification of the stores’ locations. Before analysing the functional structure of Starbucks’s space, the spatial distribution density of its stores in Shanghai are analysed using point density analysis tools. In Figure 3, the spatial distribution density of the Starbucks stores shows a gradually decreasing circular structure going from the city centre to the outer city limits. The districts of Huangpu, Jing&rsquo;an and Xuhui are in the high-density areas of the Starbucks spatial distribution pattern and are also at the centre of the circular structure.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/147741226@N06/46834978484/in/dateposted-public/" title="7"><img src="https://live.staticflickr.com/7870/46834978484_5dcb112c88_c.jpg" width="800" height="464" alt="7"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>​                              Figure 3. The Buffer Analysis of Starbucks Stores in Guangzhou. In Figure 3, the service</p>
+
+<p>areas of the stores overlap in the downtown area. This phenomenon is perhaps due to the high-density shopping malls and the number of offices in the city centre as well as the spatial and functional structure of the traffic area. To further study this phenomenon, store locations are classified according to their functions in a CSV file with a dataset based on keyword search. In Figure 4, the classification results are visualised.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/147741226@N06/32616086477/in/dateposted-public/" title="5"><img src="https://live.staticflickr.com/7887/32616086477_00ab0291be_c.jpg" width="800" height="566" alt="5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>​                                 Figure 4. The Functional Structure of Starbucks Stores in Shanghai</p>
+
+<p>Figure 4 shows that the distribution of Starbucks clustered in some certain functional areas. All Starbucks in Shanghai are classified according to location information.</p>
+
+<p><strong>The Distribution Direction of Shanghai Starbucks Stores</strong></p>
+
+<p>The location distribution of retail stores often has directionality, which means that the degree of dispersion in each direction is different. The standard deviational ellipse tool in ArcGIS is used to describe the difference in the degree of dispersion in the spatial distribution direction of Shanghai Starbucks stores. In Figure 6, 99.7% Starbucks stores in Shanghai show a spatial deviation from the northeast and southwest directions.</p>
+
+<p>Shanghai is a coastal city, so Starbucks is influenced by the regional shape of the city’s urban area, which can only develop by moving inland and explains, in part, the spatial distribution of Shanghai. Starbucks’s spatial distribution direction is also based on Shanghai&rsquo;s urban development planning.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/147741226@N06/46834978114/in/dateposted-public/" title="9"><img src="https://live.staticflickr.com/7855/46834978114_7ab7908996_c.jpg" width="800" height="436" alt="9"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>​                            Figure 6. The Standard Deviational Ellipse of Shanghai Starbucks Stores</p>
+
+<p>Figure 6 shows that the main expansion axes (the longer axis of the eclipse) are concentrated in the direction of Baoshan, Minhang and Jiading, while the expansion of Pudong is not as pronounced. This is due to it being close to the sea. The spatial distribution pattern of the Starbucks stores is also consistent with Shanghai’s urban planning strategy. The policy plan is to build a new downtown area in the Jiading District. This area is in Starbucks’s main expansion axes (as shown in Figure 7).</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/147741226@N06/46834977784/in/dateposted-public/" title="WX20190407-190755@2x"><img src="https://live.staticflickr.com/7821/46834977784_f38fb01768_c.jpg" width="800" height="466" alt="WX20190407-190755@2x"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>​                                           Figure 7. Shanghai Planning Strategy (Li et al., 2003)</p>
+
+<p>In accordance with the urban planning strategy, the direction of the stores’ extension in Shanghai’s new downtown area also shows the same functional feature, and objectively confirms the trend of the spatial functional character of Starbucks distribution.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://srivendare.github.io" >
+    &copy; 2019 My New Hugo Site
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

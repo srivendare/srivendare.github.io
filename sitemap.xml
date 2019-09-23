@@ -20,13 +20,29 @@
   </url>
   
   <url>
+    <loc>https://srivendare.github.io/posts/london-airbnb/</loc>
+  </url>
+  
+  <url>
     <loc>https://srivendare.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://srivendare.github.io/posts/brexit-housing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://srivendare.github.io/posts/bubble-chart/</loc>
+  </url>
+  
+  <url>
     <loc>https://srivendare.github.io/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://srivendare.github.io/posts/shanghai-starbucks/</loc>
   </url>
   
 </urlset>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site  | Does Brexit impact housing market?</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.6" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Does Brexit impact housing market?" />
+<meta property="og:description" content="Introcution On 23 June 2016, the United Kingdom voted on a referendum to leave the European Union. Pundits and scholars alike attempted to predict the immediate economic impact of “Brexit”, with varying degrees of success. An analysis published by the Treasury in May 2016 indicated that market uncertainty due to Brexit would lead to an increase in lending costs, thus leading to a decrease in overall house prices. Within two years, house prices were projected to fall between 10-18% - a statistic hungrily reported by the media as both a catastrophe and an opportunity ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://srivendare.github.io/posts/brexit-housing/" />
+
+
+<meta itemprop="name" content="Does Brexit impact housing market?">
+<meta itemprop="description" content="Introcution On 23 June 2016, the United Kingdom voted on a referendum to leave the European Union. Pundits and scholars alike attempted to predict the immediate economic impact of “Brexit”, with varying degrees of success. An analysis published by the Treasury in May 2016 indicated that market uncertainty due to Brexit would lead to an increase in lending costs, thus leading to a decrease in overall house prices. Within two years, house prices were projected to fall between 10-18% - a statistic hungrily reported by the media as both a catastrophe and an opportunity .">
+
+
+
+<meta itemprop="wordCount" content="1061">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Does Brexit impact housing market?"/>
+<meta name="twitter:description" content="Introcution On 23 June 2016, the United Kingdom voted on a referendum to leave the European Union. Pundits and scholars alike attempted to predict the immediate economic impact of “Brexit”, with varying degrees of success. An analysis published by the Treasury in May 2016 indicated that market uncertainty due to Brexit would lead to an increase in lending costs, thus leading to a decrease in overall house prices. Within two years, house prices were projected to fall between 10-18% - a statistic hungrily reported by the media as both a catastrophe and an opportunity ."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://srivendare.github.io" class="f3 fw2 hover-white no-underline white-90 dib">
+      My New Hugo Site
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Does Brexit impact housing market?</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h3 id="introcution">Introcution</h3>
+
+<p>On 23 June 2016, the United Kingdom voted on a referendum to leave the European Union. Pundits and scholars alike attempted to predict the immediate economic impact of “Brexit”, with varying degrees of success. An analysis published by the Treasury in May 2016 indicated that market uncertainty due to Brexit would lead to an increase in lending costs, thus leading to a decrease in overall house prices. Within two years, house prices were projected to fall between 10-18% - a statistic hungrily reported by the media as both a catastrophe and an opportunity .</p>
+
+<p>This analysis investigates the short term consequences of Brexit on median house price and overall number of house sales in London. In particular, we seek to answer the following question: To what extent has Brexit impacted the spatial distribution of London house sales?</p>
+
+<p>To address this question, we attempt to model house sales during a one month period four moths after Brexit using data from the three months prior to the referendum. We present the results of a simple linear model and a geographically weighted regression (GWR) alongside several visualizations. Finally, we discuss consequences of our findings and suggest further questions for study.</p>
+
+<p>###Distription of Data</p>
+
+<p>This analysis relies exclusively on the HM Land Registry Price Paid Dataset [9], boundaries provided by the London Data Store [10], and postcode centroids from the Ordinance Survey [11]. Data is used under the UK Open Government License. We discuss the following considerations with respect to the housing price data: completeness, outliers, and included fields.</p>
+
+<p>First, the data is notably incomplete. As Figure 1 on page 2 shows, there are no observations within the borough of Westminster, which houses much of London’s most expensive property. The reason for this is omission unclear. In addition, some types of transactions are not included in the dataset, such as divorce settlements, partial property sales, or gifts. Transactions with prices specifically including VAT are omitted.</p>
+
+<p>Only one spatial outlier was identified within the dataset. Shown in red in Figure 1, this point is clearly outside the boundary of London and was removed from our analysis.</p>
+
+<p><img src="http://wx2.sinaimg.cn/mw690/000a894fgy1g1uq952ghkj21000t8qv5.jpg" width="500px" /></p>
+
+<p>​                    Figure 1, Completeness and spatial outliers within the housing price dataset.</p>
+
+<p><img src="http://wx1.sinaimg.cn/mw690/000a894fgy1g1uq9dmlobj20vi0qcka1.jpg" width="500px" /></p>
+
+<p>​                                                                              Figure 2, Outlier</p>
+
+<h3 id="analysis">Analysis</h3>
+
+<p>The analysis consisted of five phases: ingest, data processing, visualization, linear modeling, and GWR. It was conducted on both the ward and borough level. All analysis and visualization was conducted in R (see Code Appendix).</p>
+
+<p>House price data were ingested from a csv/text file into R as a dataframe. These individual observations were then assigned the Easting and Northing (in BNG) of their containing post- code and converted to a SpatialDataFrame. Subsets of these points were selected based on transaction date for each of the four months before and after the referendum. Using a spatial overlay, points within each borough were selected and summary statistics (count, min, max, mean, median) were appended to the borough data set. Count was scaled by borough area. For each borough, 40 additional pieces of information were appended (8 timeslices and 5 statistics). The process was repeated at the ward level.</p>
+
+<p>Since the process of conveying a home takes an average of eight weeks in the UK [12, 13, 14], a one month time period1 beginning four months after the referendum was selected as the post- Brexit comparison period. Although the time required to purchase a home from decision to close may exceed four months for some buyers, four months after the decision nevertheless provides a reasonable heuristic for transactions which began after the referendum occurred.</p>
+
+<p>To visualize potential trends, we plot both pre- and post-Brexit sales volume together in a bivariate choropleth, grouped by tertiles (see Figure 3). Purple boroughs remained in the same sales tertile after Brexit, while teal boroughs decreased and and pink boroughs.</p>
+
+<p><img src="http://wx1.sinaimg.cn/mw690/000a894fgy1g1uq8w1ctpj20xk0sydvi.jpg  " width="530px" /></p>
+
+<p>Figure 3, A bivariate choropleth map2 showing the relationship between number</p>
+
+<p>​                         of house sales before and after Brexit in London boroughs.</p>
+
+<p>increased. This map suggests that borough-level sales were unlikely to be different four months after the referendum results compared with one month before.</p>
+
+<p>To further investigate the hypothesis that the spatial distribution of sales did not significantly change, we created linear and GWR models to predict post-Brexit sales based on pre-Brexit sales data. If the spatial distribution did change, we would expect pre-Brexit data to provide a poor model (low r2 value) for post-Brexit data.</p>
+
+<p>As Figure 3 shows, the difference in performance between the linear model (e.g. model
+ &lt;- lm(borough$p4_number ∼ borough$b1_number + borough$b2_number + borough$b3_number)) and the corresponding GWR was on the order of ∼ 10−3. Due to missing data GWR was not computed for median price. Since this method did not provide significant improvement over
+ a linear model, it is possible the underlying spatial distribution of house sale volume did not significantly change before and after Brexit.</p>
+
+<p>The stark difference between the high linear model multiple r2 at borough level and the compar- atively low r2 at ward level provides an interesting example of the modifiable areal unit problem. Due to the size of some wards, total number of house sales in a given month may be extremely low. Such small sample sizes require careful statistical consideration. To avoid this concern, we have chosen to visualize and discuss data at the borough level. The high r2 values from our models suggest that house sales from the three months prior to the referendum explain 93% of the variability in number and mean value of house sales after the referendum, and that spatial distribution of polygons may not be significant.</p>
+
+<p><img src="http://wx4.sinaimg.cn/mw690/000a894fgy1g1urc7oni2j213q0bota9.jpg" width="500px" /></p>
+
+<p>​                                                     Table 1, Summary of GWR and linear models</p>
+
+<p>​                                   Borough (b) and Ward (w) Number of sales (_) and Median price ($)</p>
+
+<p>There are a number of factors that might account for the remaining 7% variation. For example, seasonal trends impact house sales; nearly triple the average number of houses are sold in the last week of March (right before Tax Day), while fewer than average houses are sold in the last two weeks of December (presumably due to the holidays).</p>
+
+<p>To understand the spatial performance of these linear models, we plot and examine the residuals, as shown in Figure 4 on page 5. (Residuals for median value are in pounds sterling.) No pattern is immediately obvious. This suggests that unexplained variation in house sales may be due to a non-spatial variable, such as seasonal effects.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://srivendare.github.io" >
+    &copy; 2019 My New Hugo Site
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
