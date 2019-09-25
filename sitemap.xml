@@ -3,46 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://srivendare.github.io/</loc>
+    <loc>https://example.com/</loc>
     <lastmod>2019-09-23T22:30:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://srivendare.github.io/posts/</loc>
+    <loc>https://example.com/posts/</loc>
     <lastmod>2019-09-23T22:30:51+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://srivendare.github.io/posts/%E6%96%87%E7%AB%A0%E6%B5%8B/</loc>
+    <loc>https://example.com/posts/%E6%96%87%E7%AB%A0%E6%B5%8B/</loc>
     <lastmod>2019-09-23T22:30:51+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://srivendare.github.io/posts/london-airbnb/</loc>
+    <loc>https://example.com/posts/london-airbnb/</loc>
   </url>
   
   <url>
-    <loc>https://srivendare.github.io/categories/</loc>
+    <loc>https://example.com/posts/brexit-housing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/bubble-chart/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://srivendare.github.io/posts/brexit-housing/</loc>
-  </url>
-  
-  <url>
-    <loc>https://srivendare.github.io/posts/bubble-chart/</loc>
-  </url>
-  
-  <url>
-    <loc>https://srivendare.github.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://srivendare.github.io/posts/shanghai-starbucks/</loc>
+    <loc>https://example.com/posts/shanghai-starbucks/</loc>
   </url>
   
 </urlset>
