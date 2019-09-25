@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title></title>
+      <link>https://srivendare.github.io/posts/r%E8%AF%AD%E8%A8%80%E7%9A%84etl%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://srivendare.github.io/posts/r%E8%AF%AD%E8%A8%80%E7%9A%84etl%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</guid>
+      <description>###数据的ETL的数据处理 主要使用 + library(dplyr) + library(dplyr)
+1. dplyr # 将 rowname 字段抽取为单独属性 df1 &amp;lt;- df %&amp;gt;% mutate(name = rownames(df)) df1 # 对数据进行过滤 df2 &amp;lt;- filter(df1, cyl == 8, qsec &amp;gt; 16) df2 # 对数据进行排序 df3 &amp;lt;- arrange(df1, cyl, mpg) df3 # 挑选以 c 开头的字段 df4 &amp;lt;- select(df1, starts_with(&#39;c&#39;)) df4 # 添加新字段 df5 &amp;lt;- df1 %&amp;gt;% mutate(newcol = mpg * wt) df5  Join left_join(df1, df2, by= &amp;quot;&amp;quot;,) right_join() inner_join() full_join()  长宽转换  gather(): 将数据从宽变长  library(tidyr) tidier &amp;lt;- messy %&amp;gt;% tidier</description>
+    </item>
+    
+    <item>
       <title>Airbnb London</title>
       <link>https://srivendare.github.io/posts/london-airbnb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
