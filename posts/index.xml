@@ -6,19 +6,7 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 23 Sep 2019 22:30:51 +0800</lastBuildDate>
 		<atom:link href="https://srivendare.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>文章测</title>
-			<link>https://srivendare.github.io/posts/%E6%96%87%E7%AB%A0%E6%B5%8B/</link>
-			<pubDate>Mon, 23 Sep 2019 22:30:51 +0800</pubDate>
-			
-			<guid>https://srivendare.github.io/posts/%E6%96%87%E7%AB%A0%E6%B5%8B/</guid>
-			<description>Test</description>
-			<content type="html"><![CDATA[<p>Test</p>
-]]></content>
-		</item>
 		
 		<item>
 			<title></title>
