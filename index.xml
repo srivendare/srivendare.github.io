@@ -12,16 +12,6 @@
     
     
     <item>
-      <title></title>
-      <link>https://srivendare.github.io/posts/r%E8%AF%AD%E8%A8%80%E7%9A%84etl%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://srivendare.github.io/posts/r%E8%AF%AD%E8%A8%80%E7%9A%84etl%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</guid>
-      <description>###数据的ETL的数据处理 主要使用 + library(dplyr) + library(dplyr)
-1. dplyr # 将 rowname 字段抽取为单独属性 df1 &amp;lt;- df %&amp;gt;% mutate(name = rownames(df)) df1 # 对数据进行过滤 df2 &amp;lt;- filter(df1, cyl == 8, qsec &amp;gt; 16) df2 # 对数据进行排序 df3 &amp;lt;- arrange(df1, cyl, mpg) df3 # 挑选以 c 开头的字段 df4 &amp;lt;- select(df1, starts_with(&#39;c&#39;)) df4 # 添加新字段 df5 &amp;lt;- df1 %&amp;gt;% mutate(newcol = mpg * wt) df5  Join left_join(df1, df2, by= &amp;quot;&amp;quot;,) right_join() inner_join() full_join()  长宽转换  gather(): 将数据从宽变长  library(tidyr) tidier &amp;lt;- messy %&amp;gt;% tidier</description>
-    </item>
-    
-    <item>
       <title>Airbnb London</title>
       <link>https://srivendare.github.io/posts/london-airbnb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -47,6 +37,17 @@ listings - Detailed listings attributes including price (continuous), location, 
       
       <guid>https://srivendare.github.io/posts/bubble-chart/</guid>
       <description>Import Data #Import China shapefile: china_map&amp;lt;-readOGR(&amp;#34;/Users/apple/Desktop/CASA/GIS/As 1/DataWarehouse-master/Rstudy /CHN_adm/bou2_4p.shp&amp;#34;)data1&amp;lt;- china_map@data data2&amp;lt;- data.frame(id=row.names(data1),data1) china_map1 &amp;lt;- fortify(china_map)#Transffom and join the data: china_map1 &amp;lt;- fortify(china_map) china_map_data &amp;lt;- join(china_map1,data2, type = &amp;#34;full&amp;#34;) mydata &amp;lt;- read.csv(&amp;#34;/Users/apple/Desktop/CASA/GIS/As 1/drnum.ke.csv&amp;#34;) china_data &amp;lt;- join(china_map_data, mydata, type=&amp;#34;full&amp;#34;) #Get the province coordinates : province_city &amp;lt;- read.csv(&amp;#34;/Users/apple/Desktop/CASA/GIS/As 1/chinaprovince.ke.csv &amp;#34;) # example 1 : Point chart on map ggplot(china_data,aes(long,lat))+ geom_polygon(aes(group=group),fill=&amp;#34;white&amp;#34;,colour=&amp;#34;grey60&amp;#34;)+ geom_point(data=province_city,aes(x=jd,y=wd),colour=&amp;#34;red&amp;#34;)+ coord_map(&amp;#34;polyconic&amp;#34;) + theme( panel.grid = element_blank(), panel.background = element_blank(), axis.text = element_blank(), axis.</description>
+    </item>
+    
+    <item>
+      <title>R语言 数据的ETL的数据处理</title>
+      <link>https://srivendare.github.io/posts/r-etl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://srivendare.github.io/posts/r-etl/</guid>
+      <description>###数据的ETL的数据处理
+主要使用 + library(dplyr) + library(dplyr)
+1. dplyr # 将 rowname 字段抽取为单独属性 df1 &amp;lt;- df %&amp;gt;% mutate(name = rownames(df)) df1 # 对数据进行过滤 df2 &amp;lt;- filter(df1, cyl == 8, qsec &amp;gt; 16) df2 # 对数据进行排序 df3 &amp;lt;- arrange(df1, cyl, mpg) df3 # 挑选以 c 开头的字段 df4 &amp;lt;- select(df1, starts_with(&#39;c&#39;)) df4 # 添加新字段 df5 &amp;lt;- df1 %&amp;gt;% mutate(newcol = mpg * wt) df5  Join left_join(df1, df2, by= &amp;quot;&amp;quot;,) right_join() inner_join() full_join()  长宽转换  gather(): 将数据从宽变长  library(tidyr) tidier &amp;lt;- messy %&amp;gt;% tidier</description>
     </item>
     
     <item>
