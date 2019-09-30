@@ -3,25 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://srivendare.github.io/posts/london-airbnb/</loc>
-  </url>
-  
-  <url>
-    <loc>https://srivendare.github.io/posts/brexit-housing/</loc>
-  </url>
-  
-  <url>
-    <loc>https://srivendare.github.io/posts/bubble-chart/</loc>
-  </url>
-  
-  <url>
     <loc>https://srivendare.github.io/posts/</loc>
+    <lastmod>2019-02-05T14:00:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://srivendare.github.io/</loc>
+    <lastmod>2019-02-05T14:00:50+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://srivendare.github.io/posts/shanghai-starbucks/</loc>
+    <lastmod>2019-02-05T14:00:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://srivendare.github.io/posts/brexit-housing/</loc>
+    <lastmod>2018-11-29T14:00:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://srivendare.github.io/posts/london-airbnb/</loc>
+  </url>
+  
+  <url>
+    <loc>https://srivendare.github.io/posts/bubble-chart/</loc>
   </url>
   
   <url>
@@ -31,10 +39,6 @@
   <url>
     <loc>https://srivendare.github.io/tags/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://srivendare.github.io/posts/shanghai-starbucks/</loc>
   </url>
   
 </urlset>

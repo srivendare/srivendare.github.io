@@ -7,9 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 05 Feb 2019 14:00:50 +0800</lastBuildDate>
     
 	<atom:link href="https://srivendare.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Spatial Distribution Character of Starbucks in Shanghai</title>
+      <link>https://srivendare.github.io/posts/shanghai-starbucks/</link>
+      <pubDate>Tue, 05 Feb 2019 14:00:50 +0800</pubDate>
+      
+      <guid>https://srivendare.github.io/posts/shanghai-starbucks/</guid>
+      <description>Introduction The aim of this article is to analysis the spatial distribution characteristics of Starbucks, the retail business coffee shop, in Shanghai. For the purpose of this analysis ArcGIS software is used. The data employed in this study include the number of Starbucks stores in Shanghai, their addresses, geographical coordinates and their Shanghai administrative districts. Store location data is derived from Opendatasoft.com and the Shanghai geometric shapefile from the ArcGIS official website.</description>
+    </item>
+    
+    <item>
+      <title>Does Brexit impact housing market?</title>
+      <link>https://srivendare.github.io/posts/brexit-housing/</link>
+      <pubDate>Thu, 29 Nov 2018 14:00:50 +0800</pubDate>
+      
+      <guid>https://srivendare.github.io/posts/brexit-housing/</guid>
+      <description>Introcution On 23 June 2016, the United Kingdom voted on a referendum to leave the European Union. Pundits and scholars alike attempted to predict the immediate economic impact of “Brexit”, with varying degrees of success. An analysis published by the Treasury in May 2016 indicated that market uncertainty due to Brexit would lead to an increase in lending costs, thus leading to a decrease in overall house prices. Within two years, house prices were projected to fall between 10-18% - a statistic hungrily reported by the media as both a catastrophe and an opportunity .</description>
+    </item>
     
     <item>
       <title>Airbnb London</title>
@@ -19,15 +38,6 @@
       <guid>https://srivendare.github.io/posts/london-airbnb/</guid>
       <description>Description of Data Data type The data is sourced from the Inside Airbnb , a publicly Airbnb data provider. The dataset comprises of three main tables:
 listings - Detailed listings attributes including price (continuous), location, room_type (categorical), neighbourhood (categorical), ratings (continuous) among others. reviews - Detailed reviews given by the guests with 6 attributes. Key attributes include date (datetime), listing_id (discrete), reviewer_id (discrete) and comment (textual). calendar - Provides details about booking for the next year by listing.</description>
-    </item>
-    
-    <item>
-      <title>Does Brexit impact housing market?</title>
-      <link>https://srivendare.github.io/posts/brexit-housing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://srivendare.github.io/posts/brexit-housing/</guid>
-      <description>Introcution On 23 June 2016, the United Kingdom voted on a referendum to leave the European Union. Pundits and scholars alike attempted to predict the immediate economic impact of “Brexit”, with varying degrees of success. An analysis published by the Treasury in May 2016 indicated that market uncertainty due to Brexit would lead to an increase in lending costs, thus leading to a decrease in overall house prices. Within two years, house prices were projected to fall between 10-18% - a statistic hungrily reported by the media as both a catastrophe and an opportunity .</description>
     </item>
     
     <item>
@@ -48,15 +58,6 @@ listings - Detailed listings attributes including price (continuous), location, 
       <description>###数据的ETL的数据处理
 主要使用 + library(dplyr) + library(dplyr)
 1. dplyr # 将 rowname 字段抽取为单独属性 df1 &amp;lt;- df %&amp;gt;% mutate(name = rownames(df)) df1 # 对数据进行过滤 df2 &amp;lt;- filter(df1, cyl == 8, qsec &amp;gt; 16) df2 # 对数据进行排序 df3 &amp;lt;- arrange(df1, cyl, mpg) df3 # 挑选以 c 开头的字段 df4 &amp;lt;- select(df1, starts_with(&#39;c&#39;)) df4 # 添加新字段 df5 &amp;lt;- df1 %&amp;gt;% mutate(newcol = mpg * wt) df5  Join left_join(df1, df2, by= &amp;quot;&amp;quot;,) right_join() inner_join() full_join()  长宽转换  gather(): 将数据从宽变长  library(tidyr) tidier &amp;lt;- messy %&amp;gt;% tidier</description>
-    </item>
-    
-    <item>
-      <title>The Spatial Distribution Character of Starbucks in Shanghai</title>
-      <link>https://srivendare.github.io/posts/shanghai-starbucks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://srivendare.github.io/posts/shanghai-starbucks/</guid>
-      <description>Introduction The aim of this article is to analysis the spatial distribution characteristics of Starbucks, the retail business coffee shop, in Shanghai. For the purpose of this analysis ArcGIS software is used. The data employed in this study include the number of Starbucks stores in Shanghai, their addresses, geographical coordinates and their Shanghai administrative districts. Store location data is derived from Opendatasoft.com and the Shanghai geometric shapefile from the ArcGIS official website.</description>
     </item>
     
   </channel>
