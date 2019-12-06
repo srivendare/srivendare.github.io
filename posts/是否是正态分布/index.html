@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="https://zhuanlan.zhihu.com/p/58054302
+在实际研究中，很多时候都需要数据满足正态分布才可以。比如说回归分析，其实做回归分析有一个前提条件即因变量需要满足正态分布性。也比如说方差分析，其有一个潜在的前提假定即因变量Y需要满足正态分布。还有很多种情况，比如T检验，相关分析等等。
+但这种情况往往被分析人员忽略掉，或者是数学基本不够扎实，或者是无论如何数据均不满足正态分布等客观条件，也或者其它情况等。如果说没有满足前提条件，分析的结果会变得不科学严谨，分析结论会受到置疑。
+哪些研究方法需要数据满足正态分布才行呢？以及如果不满足正态分布时应该如何处理呢？接下来会逐步说明
+第一：需要满足正态分布的几类常见研究方法： 常见会涉及五种研究方法，它们对正态性要求相对较高，如果不满足正态性则会有对应的处理。
+线性回归分析
+线性回归分析，很多时候也称回归分析。其对正态性的要求较为严格，包括因变量Y需要满足正态性要求，同时残差也需要满足正态性。如果说因变量Y不满足正态分布，通常情况下有以下几种处理办法。
+第1：对因变量Y取对数处理（包括自然对数和10为底的对数）；这可以在SPSSAU的生成变量功能里面找到；
+第2：如果数据接近于正态分布，则接受其为正态分布性。此种情况较多，因为在研究影响关系时，线性回归最适合，如果不进行线性回归，通常情况下很难有更适合的研究方法。因而很多时候只要数据接受于正态性即可，而不用强求数据完美的正态，事实上在生活中绝对的“正态性”并不存在。使用正态分布检验方法进行验证正态性最为严苛，因而可使用正态分布图直观查看数据分布情况，接近于“正态分布”更符合实际情况；
+第3：加大样本量；有时候数据太少时，即使正态分布的数据，也因为样本小没有办法覆盖各种情况，从而变得不正态，因而加大样本量会减少这种情况产生。
+Pearson相关分析
+Pearson相关分析（也称皮尔逊相关分析，很多时候直接称呼为相关分析），在实际研究中使用最多。其实Pearson相关分析也有着默认的前提条件，即数据满足正态分布性。但现实中的数据很难满足正态分布性，此时建议使用Spearman（斯皮尔曼）相关系数进行研究即可。
+方差分析
+方差分析（这里特指单因素方差分析），其默认有个前提条件是因变量需要符合正态分布性，可能是由于即使非正态分布，方差分析的结果也较为稳健，因而很少有人先进行正态分布性检验。
+事实上方差分析的因变量也需要满足正态分布特质，如果没有满足，则可以使用非参数检验进行检验。具体非参数检验的类型来看，如果X的组别为两组，例如研究人员想知道不同性别学生的购买意愿是否有显著差异，按性别分为男和女共两组，则应该使用MannWhitney统计量，如果组别超过两组，则应该使用Kruskal-Wallis统计量结果。SPSSAU自动为你选择MannWhitney或者Kruskal-Wallis统计量。
+独立T检验
+独立T检验（也称T检验），其默认有个前提条件是因变量需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是MannWhitney检验进行研究。
+单样本T检验
+单样本T检验，其默认前提条件是数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是单样本Wilcoxon检验进行研究。
+配对样本T检验
+配对样本T检验，其默认前提条件是差值数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是单样本Wilcoxon检验进行研究。其实配对样本T检验与单样本T检验的原理是一模一样，无非是进行了一次数据相减（即差值）处理而已，因而其和单样本T检验保持一致。
+第二：理论与现实的“相悖” 从理论上讲，很多研究方法需要满足正态分布特质，但现实情况下，很难满足正态分布性。SPSSAU认为有两点原因。
+1是抽样样本过少，很难cover所有情况，所以导致总体是正态分布，但抽样样本不满足正态分布，比如中国13亿人的身高肯定是正态分布，但抽样100个人可能就不会正态分布；
+2是认知的不一致，事实上正态性是一种数学理论上的分布，实际情况下只要数据分布基本满足“钟形曲线”特征，SPSSAU认为也应该将数据看成是正态分布。
+因而在实际研究过程中，很可能会出现需要满足正态性要求，但是并不满足，此时应该如何处理呢？SPSSAU认为有三种处理方式，如下图：
+SPSSAU整理
+第一种：使用正态分布图直观判断正态分布特质，而不是使用检验方法。原因在于检验方法比较严苛，而现实数据满足“钟形曲线”特征即可；
+第二种：将数据取对数，或者开根号等处理。如果数据值非常大，取对数或者开根号等，会对数据进行“压缩”处理，相对意义上单位会减小，但值的相对意义还是一样，通常情况下，数据会变得相对“正态”一些；此步可使用SPSSAU的“生成变量”功能即可完成。
+第三种：使用其它研究方法。如果是使用方差分析，T检验等，如果不满足正态性，则有对应的非参数检验方法可以使用。如果是非参数检验方法进行差异对比，则应该使用中位数去表述大小差异等，而一般不使用平均值（满足正态分布性时才使用平均值表示整体水平）。当然，SPSSAU均会提供对应的非参数检验方法等，可直接使用。
+第三：正态分布的“检验方法” 上述已经讲了很多关于正态分布的话题，那如何对正态分布性进行检验呢？SPSSAU共提供以下几种检验，如下：
+第一种：图示法（使用SPSSAU的正态图即可，可得到类似如下的图等）
+第二种：检验方法
+SPSSAU结果输出界面
+SPSSAU共提供两种正态性检验方法，包括S-W检验和K-S检验。小样本(小于50)时建议使用S-W检验，大样本(大于50)时建议使用K-S检验；此两个检验的原假设为数据正态分布，因而P值&gt;0.05，说明该项具有正态分布特质；这些均会在SPSSAU的智能分析中默认提供。">
+
+
+
+<meta itemprop="wordCount" content="37">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="https://zhuanlan.zhihu.com/p/58054302
+在实际研究中，很多时候都需要数据满足正态分布才可以。比如说回归分析，其实做回归分析有一个前提条件即因变量需要满足正态分布性。也比如说方差分析，其有一个潜在的前提假定即因变量Y需要满足正态分布。还有很多种情况，比如T检验，相关分析等等。
+但这种情况往往被分析人员忽略掉，或者是数学基本不够扎实，或者是无论如何数据均不满足正态分布等客观条件，也或者其它情况等。如果说没有满足前提条件，分析的结果会变得不科学严谨，分析结论会受到置疑。
+哪些研究方法需要数据满足正态分布才行呢？以及如果不满足正态分布时应该如何处理呢？接下来会逐步说明
+第一：需要满足正态分布的几类常见研究方法： 常见会涉及五种研究方法，它们对正态性要求相对较高，如果不满足正态性则会有对应的处理。
+线性回归分析
+线性回归分析，很多时候也称回归分析。其对正态性的要求较为严格，包括因变量Y需要满足正态性要求，同时残差也需要满足正态性。如果说因变量Y不满足正态分布，通常情况下有以下几种处理办法。
+第1：对因变量Y取对数处理（包括自然对数和10为底的对数）；这可以在SPSSAU的生成变量功能里面找到；
+第2：如果数据接近于正态分布，则接受其为正态分布性。此种情况较多，因为在研究影响关系时，线性回归最适合，如果不进行线性回归，通常情况下很难有更适合的研究方法。因而很多时候只要数据接受于正态性即可，而不用强求数据完美的正态，事实上在生活中绝对的“正态性”并不存在。使用正态分布检验方法进行验证正态性最为严苛，因而可使用正态分布图直观查看数据分布情况，接近于“正态分布”更符合实际情况；
+第3：加大样本量；有时候数据太少时，即使正态分布的数据，也因为样本小没有办法覆盖各种情况，从而变得不正态，因而加大样本量会减少这种情况产生。
+Pearson相关分析
+Pearson相关分析（也称皮尔逊相关分析，很多时候直接称呼为相关分析），在实际研究中使用最多。其实Pearson相关分析也有着默认的前提条件，即数据满足正态分布性。但现实中的数据很难满足正态分布性，此时建议使用Spearman（斯皮尔曼）相关系数进行研究即可。
+方差分析
+方差分析（这里特指单因素方差分析），其默认有个前提条件是因变量需要符合正态分布性，可能是由于即使非正态分布，方差分析的结果也较为稳健，因而很少有人先进行正态分布性检验。
+事实上方差分析的因变量也需要满足正态分布特质，如果没有满足，则可以使用非参数检验进行检验。具体非参数检验的类型来看，如果X的组别为两组，例如研究人员想知道不同性别学生的购买意愿是否有显著差异，按性别分为男和女共两组，则应该使用MannWhitney统计量，如果组别超过两组，则应该使用Kruskal-Wallis统计量结果。SPSSAU自动为你选择MannWhitney或者Kruskal-Wallis统计量。
+独立T检验
+独立T检验（也称T检验），其默认有个前提条件是因变量需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是MannWhitney检验进行研究。
+单样本T检验
+单样本T检验，其默认前提条件是数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是单样本Wilcoxon检验进行研究。
+配对样本T检验
+配对样本T检验，其默认前提条件是差值数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是单样本Wilcoxon检验进行研究。其实配对样本T检验与单样本T检验的原理是一模一样，无非是进行了一次数据相减（即差值）处理而已，因而其和单样本T检验保持一致。
+第二：理论与现实的“相悖” 从理论上讲，很多研究方法需要满足正态分布特质，但现实情况下，很难满足正态分布性。SPSSAU认为有两点原因。
+1是抽样样本过少，很难cover所有情况，所以导致总体是正态分布，但抽样样本不满足正态分布，比如中国13亿人的身高肯定是正态分布，但抽样100个人可能就不会正态分布；
+2是认知的不一致，事实上正态性是一种数学理论上的分布，实际情况下只要数据分布基本满足“钟形曲线”特征，SPSSAU认为也应该将数据看成是正态分布。
+因而在实际研究过程中，很可能会出现需要满足正态性要求，但是并不满足，此时应该如何处理呢？SPSSAU认为有三种处理方式，如下图：
+SPSSAU整理
+第一种：使用正态分布图直观判断正态分布特质，而不是使用检验方法。原因在于检验方法比较严苛，而现实数据满足“钟形曲线”特征即可；
+第二种：将数据取对数，或者开根号等处理。如果数据值非常大，取对数或者开根号等，会对数据进行“压缩”处理，相对意义上单位会减小，但值的相对意义还是一样，通常情况下，数据会变得相对“正态”一些；此步可使用SPSSAU的“生成变量”功能即可完成。
+第三种：使用其它研究方法。如果是使用方差分析，T检验等，如果不满足正态性，则有对应的非参数检验方法可以使用。如果是非参数检验方法进行差异对比，则应该使用中位数去表述大小差异等，而一般不使用平均值（满足正态分布性时才使用平均值表示整体水平）。当然，SPSSAU均会提供对应的非参数检验方法等，可直接使用。
+第三：正态分布的“检验方法” 上述已经讲了很多关于正态分布的话题，那如何对正态分布性进行检验呢？SPSSAU共提供以下几种检验，如下：
+第一种：图示法（使用SPSSAU的正态图即可，可得到类似如下的图等）
+第二种：检验方法
+SPSSAU结果输出界面
+SPSSAU共提供两种正态性检验方法，包括S-W检验和K-S检验。小样本(小于50)时建议使用S-W检验，大样本(大于50)时建议使用K-S检验；此两个检验的原假设为数据正态分布，因而P值&gt;0.05，说明该项具有正态分布特质；这些均会在SPSSAU的智能分析中默认提供。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://srivendare.github.io/posts/%E6%98%AF%E5%90%A6%E6%98%AF%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="https://zhuanlan.zhihu.com/p/58054302
+在实际研究中，很多时候都需要数据满足正态分布才可以。比如说回归分析，其实做回归分析有一个前提条件即因变量需要满足正态分布性。也比如说方差分析，其有一个潜在的前提假定即因变量Y需要满足正态分布。还有很多种情况，比如T检验，相关分析等等。
+但这种情况往往被分析人员忽略掉，或者是数学基本不够扎实，或者是无论如何数据均不满足正态分布等客观条件，也或者其它情况等。如果说没有满足前提条件，分析的结果会变得不科学严谨，分析结论会受到置疑。
+哪些研究方法需要数据满足正态分布才行呢？以及如果不满足正态分布时应该如何处理呢？接下来会逐步说明
+第一：需要满足正态分布的几类常见研究方法： 常见会涉及五种研究方法，它们对正态性要求相对较高，如果不满足正态性则会有对应的处理。
+线性回归分析
+线性回归分析，很多时候也称回归分析。其对正态性的要求较为严格，包括因变量Y需要满足正态性要求，同时残差也需要满足正态性。如果说因变量Y不满足正态分布，通常情况下有以下几种处理办法。
+第1：对因变量Y取对数处理（包括自然对数和10为底的对数）；这可以在SPSSAU的生成变量功能里面找到；
+第2：如果数据接近于正态分布，则接受其为正态分布性。此种情况较多，因为在研究影响关系时，线性回归最适合，如果不进行线性回归，通常情况下很难有更适合的研究方法。因而很多时候只要数据接受于正态性即可，而不用强求数据完美的正态，事实上在生活中绝对的“正态性”并不存在。使用正态分布检验方法进行验证正态性最为严苛，因而可使用正态分布图直观查看数据分布情况，接近于“正态分布”更符合实际情况；
+第3：加大样本量；有时候数据太少时，即使正态分布的数据，也因为样本小没有办法覆盖各种情况，从而变得不正态，因而加大样本量会减少这种情况产生。
+Pearson相关分析
+Pearson相关分析（也称皮尔逊相关分析，很多时候直接称呼为相关分析），在实际研究中使用最多。其实Pearson相关分析也有着默认的前提条件，即数据满足正态分布性。但现实中的数据很难满足正态分布性，此时建议使用Spearman（斯皮尔曼）相关系数进行研究即可。
+方差分析
+方差分析（这里特指单因素方差分析），其默认有个前提条件是因变量需要符合正态分布性，可能是由于即使非正态分布，方差分析的结果也较为稳健，因而很少有人先进行正态分布性检验。
+事实上方差分析的因变量也需要满足正态分布特质，如果没有满足，则可以使用非参数检验进行检验。具体非参数检验的类型来看，如果X的组别为两组，例如研究人员想知道不同性别学生的购买意愿是否有显著差异，按性别分为男和女共两组，则应该使用MannWhitney统计量，如果组别超过两组，则应该使用Kruskal-Wallis统计量结果。SPSSAU自动为你选择MannWhitney或者Kruskal-Wallis统计量。
+独立T检验
+独立T检验（也称T检验），其默认有个前提条件是因变量需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是MannWhitney检验进行研究。
+单样本T检验
+单样本T检验，其默认前提条件是数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是单样本Wilcoxon检验进行研究。
+配对样本T检验
+配对样本T检验，其默认前提条件是差值数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是单样本Wilcoxon检验进行研究。其实配对样本T检验与单样本T检验的原理是一模一样，无非是进行了一次数据相减（即差值）处理而已，因而其和单样本T检验保持一致。
+第二：理论与现实的“相悖” 从理论上讲，很多研究方法需要满足正态分布特质，但现实情况下，很难满足正态分布性。SPSSAU认为有两点原因。
+1是抽样样本过少，很难cover所有情况，所以导致总体是正态分布，但抽样样本不满足正态分布，比如中国13亿人的身高肯定是正态分布，但抽样100个人可能就不会正态分布；
+2是认知的不一致，事实上正态性是一种数学理论上的分布，实际情况下只要数据分布基本满足“钟形曲线”特征，SPSSAU认为也应该将数据看成是正态分布。
+因而在实际研究过程中，很可能会出现需要满足正态性要求，但是并不满足，此时应该如何处理呢？SPSSAU认为有三种处理方式，如下图：
+SPSSAU整理
+第一种：使用正态分布图直观判断正态分布特质，而不是使用检验方法。原因在于检验方法比较严苛，而现实数据满足“钟形曲线”特征即可；
+第二种：将数据取对数，或者开根号等处理。如果数据值非常大，取对数或者开根号等，会对数据进行“压缩”处理，相对意义上单位会减小，但值的相对意义还是一样，通常情况下，数据会变得相对“正态”一些；此步可使用SPSSAU的“生成变量”功能即可完成。
+第三种：使用其它研究方法。如果是使用方差分析，T检验等，如果不满足正态性，则有对应的非参数检验方法可以使用。如果是非参数检验方法进行差异对比，则应该使用中位数去表述大小差异等，而一般不使用平均值（满足正态分布性时才使用平均值表示整体水平）。当然，SPSSAU均会提供对应的非参数检验方法等，可直接使用。
+第三：正态分布的“检验方法” 上述已经讲了很多关于正态分布的话题，那如何对正态分布性进行检验呢？SPSSAU共提供以下几种检验，如下：
+第一种：图示法（使用SPSSAU的正态图即可，可得到类似如下的图等）
+第二种：检验方法
+SPSSAU结果输出界面
+SPSSAU共提供两种正态性检验方法，包括S-W检验和K-S检验。小样本(小于50)时建议使用S-W检验，大样本(大于50)时建议使用K-S检验；此两个检验的原假设为数据正态分布，因而P值&gt;0.05，说明该项具有正态分布特质；这些均会在SPSSAU的智能分析中默认提供。"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title></title>
+	<link rel="stylesheet" href="https://srivendare.github.io/css/style.min.5ee5e7976cd09872c64e40a582206543f6aa38c69a8c43898aadc70040344b92.css" integrity="sha256-XuXnl2zQmHLGTkClgiBlQ/aqOMaajEOJiq3HAEA0S5I=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://srivendare.github.io">Rui SHANG</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://srivendare.github.io/posts/">Posts</a>
+				<a href="https://srivendare.github.io/about-hugo/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://https://github.com/srivendare" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://srivendare.github.io/posts/">Posts</a></li>
+			<li><a href="https://srivendare.github.io/about-hugo/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Jan 1, 0001</span></div>
+				<h1></h1>
+			</header>
+			<div class="content">
+				
+
+<p><a href="https://zhuanlan.zhihu.com/p/58054302">https://zhuanlan.zhihu.com/p/58054302</a></p>
+
+<p>在实际研究中，很多时候都需要数据满足正态分布才可以。比如说回归分析，其实做回归分析有一个前提条件即因变量需要满足正态分布性。也比如说方差分析，其有一个潜在的前提假定即因变量Y需要满足正态分布。还有很多种情况，比如T检验，相关分析等等。</p>
+
+<p>但这种情况往往被分析人员忽略掉，或者是数学基本不够扎实，或者是无论如何数据均不满足正态分布等客观条件，也或者其它情况等。如果说没有满足前提条件，分析的结果会变得不科学严谨，分析结论会受到置疑。</p>
+
+<p>哪些研究方法需要数据满足正态分布才行呢？以及如果不满足正态分布时应该如何处理呢？接下来会逐步说明</p>
+
+<h3 id="第一-需要满足正态分布的几类常见研究方法"><strong>第一：需要满足正态分布的几类常见研究方法：</strong><a href="#第一-需要满足正态分布的几类常见研究方法" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+
+<p>常见会涉及五种研究方法，它们对正态性要求相对较高，如果不满足正态性则会有对应的处理。</p>
+
+<p><img src="https://pic4.zhimg.com/80/v2-d7fe16ca6497827b777c711ae6e1fa3f_hd.png" alt="img" /></p>
+
+<p><strong>线性回归分析</strong></p>
+
+<p>线性回归分析，很多时候也称回归分析。其对正态性的要求较为严格，包括因变量Y需要满足正态性要求，同时残差也需要满足正态性。如果说因变量Y不满足正态分布，通常情况下有以下几种处理办法。</p>
+
+<p>第1：对因变量Y取对数处理（包括自然对数和10为底的对数）；这可以在<a href="https://link.zhihu.com/?target=http%3A//www.spssau.com/%3F100001000">SPSSAU</a>的<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/dataprocessing/generatevariable.html">生成变量</a>功能里面找到；</p>
+
+<p>第2：如果数据接近于正态分布，则接受其为正态分布性。此种情况较多，因为在研究影响关系时，线性回归最适合，如果不进行线性回归，通常情况下很难有更适合的研究方法。因而很多时候只要数据接受于正态性即可，而不用强求数据完美的正态，事实上在生活中绝对的“正态性”并不存在。使用正态分布检验方法进行验证正态性最为严苛，因而可使用正态分布图直观查看数据分布情况，接近于“正态分布”更符合实际情况；</p>
+
+<p>第3：加大样本量；有时候数据太少时，即使正态分布的数据，也因为样本小没有办法覆盖各种情况，从而变得不正态，因而加大样本量会减少这种情况产生。</p>
+
+<p><strong>Pearson相关分析</strong></p>
+
+<p>Pearson相关分析（也称皮尔逊相关分析，很多时候直接称呼为相关分析），在实际研究中使用最多。其实Pearson相关分析也有着默认的前提条件，即数据满足正态分布性。但现实中的数据很难满足正态分布性，此时建议使用Spearman（斯皮尔曼）相关系数进行研究即可。</p>
+
+<p><strong>方差分析</strong></p>
+
+<p>方差分析（这里特指<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/universalmethod/onewayanova.html">单因素方差分析</a>），其默认有个前提条件是因变量需要符合正态分布性，可能是由于即使非正态分布，方差分析的结果也较为稳健，因而很少有人先进行正态分布性检验。</p>
+
+<p>事实上方差分析的因变量也需要满足正态分布特质，如果没有满足，则可以使用非参数检验进行检验。具体<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/universalmethod/nonparametrictest.html">非参数检验</a>的类型来看，如果X的组别为两组，例如研究人员想知道不同性别学生的购买意愿是否有显著差异，按性别分为男和女共两组，则应该使用MannWhitney统计量，如果组别超过两组，则应该使用Kruskal-Wallis统计量结果。<a href="https://link.zhihu.com/?target=http%3A//www.spssau.com/%3F100001000">SPSSAU</a>自动为你选择MannWhitney或者Kruskal-Wallis统计量。</p>
+
+<p><strong>独立T检验</strong></p>
+
+<p>独立T检验（也称<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/universalmethod/independentttest.html">T检验</a>），其默认有个前提条件是因变量需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是MannWhitney检验进行研究。</p>
+
+<p><strong>单样本T检验</strong></p>
+
+<p>单样本T检验，其默认前提条件是数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/medicalmethod/onesamplewilcoxon.html">单样本Wilcoxon检验</a>进行研究。</p>
+
+<p><strong>配对样本T检验</strong></p>
+
+<p>配对样本T检验，其默认前提条件是差值数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/medicalmethod/onesamplewilcoxon.html">单样本Wilcoxon检验</a>进行研究。其实配对样本T检验与单样本T检验的原理是一模一样，无非是进行了一次数据相减（即差值）处理而已，因而其和单样本T检验保持一致。</p>
+
+<h2 id="第二-理论与现实的-相悖"><strong>第二：理论与现实的“相悖”</strong><a href="#第二-理论与现实的-相悖" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>从理论上讲，很多研究方法需要满足正态分布特质，但现实情况下，很难满足正态分布性。SPSSAU认为有两点原因。</p>
+
+<p>1是抽样样本过少，很难cover所有情况，所以导致总体是正态分布，但抽样样本不满足正态分布，比如中国13亿人的身高肯定是正态分布，但抽样100个人可能就不会正态分布；</p>
+
+<p>2是认知的不一致，事实上正态性是一种数学理论上的分布，实际情况下只要数据分布基本满足“钟形曲线”特征，SPSSAU认为也应该将数据看成是正态分布。</p>
+
+<p>因而在实际研究过程中，很可能会出现需要满足正态性要求，但是并不满足，此时应该如何处理呢？SPSSAU认为有三种处理方式，如下图：</p>
+
+<p><img src="https://pic4.zhimg.com/80/v2-afc8dc181120bb85df9382aa1e53f07f_hd.png" alt="img" />SPSSAU整理</p>
+
+<p>第一种：使用正态分布图直观判断正态分布特质，而不是使用检验方法。原因在于检验方法比较严苛，而现实数据满足“钟形曲线”特征即可；</p>
+
+<p>第二种：将数据取对数，或者开根号等处理。如果数据值非常大，取对数或者开根号等，会对数据进行“压缩”处理，相对意义上单位会减小，但值的相对意义还是一样，通常情况下，数据会变得相对“正态”一些；此步可使用SPSSAU的“<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/dataprocessing/generatevariable.html">生成变量</a>”功能即可完成。</p>
+
+<p>第三种：使用其它研究方法。如果是使用方差分析，T检验等，如果不满足正态性，则有对应的非参数检验方法可以使用。如果是非参数检验方法进行差异对比，则应该使用中位数去表述大小差异等，而一般不使用平均值（满足正态分布性时才使用平均值表示整体水平）。当然，SPSSAU均会提供对应的非参数检验方法等，可直接使用。</p>
+
+<h2 id="第三-正态分布的-检验方法"><strong>第三：正态分布的“检验方法”</strong><a href="#第三-正态分布的-检验方法" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+
+<p>上述已经讲了很多关于正态分布的话题，那如何对正态分布性进行检验呢？SPSSAU共提供以下几种检验，如下：</p>
+
+<p><strong>第一种：图示法（使用SPSSAU的正态图即可，可得到类似如下的图等）</strong></p>
+
+<p><img src="https://pic3.zhimg.com/80/v2-3ed2947201445b0b1dce81382be10f5e_hd.png" alt="img" /></p>
+
+<p><img src="https://pic4.zhimg.com/80/v2-a96885cba8b1ef4a9b0d99eca06485e3_hd.png" alt="img" /></p>
+
+<p><strong>第二种：检验方法</strong></p>
+
+<p><img src="https://pic1.zhimg.com/80/v2-5b57617e6e5e5933acb4a908d83e2878_hd.png" alt="img" />SPSSAU结果输出界面</p>
+
+<p>SPSSAU共提供两种正态性检验方法，包括S-W检验和K-S检验。小样本(小于50)时建议使用S-W检验，大样本(大于50)时建议使用K-S检验；此两个检验的原假设为数据正态分布，因而P值&gt;0.05，说明该项具有正态分布特质；这些均会在SPSSAU的智能分析中默认提供。</p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>37 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>0001-01-01 08:00 &#43;0800</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://srivendare.github.io/posts/%E5%B8%B8%E8%A7%81%E6%A6%82%E7%8E%87%E6%95%B0%E6%8D%AE%E5%88%86%E5%B8%83%E6%A8%A1%E5%BC%8F/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span></span>
+			</a>
+			<a class="prev-post" href="https://srivendare.github.io/posts/london-airbnb/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Airbnb London</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2019 <a href="https://srivendare.github.io"></a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://srivendare.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://srivendare.github.io/js/bundle.min.490e43e5af6db5906f28afa49a4e16bf9f626b758e3fca92f146b870eb94bb37.js" integrity="sha256-SQ5D5a9ttZBvKK+kmk4Wv59ia3WOP8qS8Ua4cOuUuzc=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

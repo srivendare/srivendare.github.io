@@ -102,6 +102,56 @@ distribution pattern.</p>
 		</item>
 		
 		<item>
+			<title>年龄对于手机游戏的偏好</title>
+			<link>https://srivendare.github.io/posts/%E5%B9%B4%E9%BE%84%E5%AF%B9%E4%BA%8E%E6%89%8B%E6%9C%BA%E6%B8%B8%E6%88%8F%E7%9A%84%E5%81%8F%E5%A5%BD/</link>
+			<pubDate>Tue, 05 Feb 2019 14:00:50 +0800</pubDate>
+			
+			<guid>https://srivendare.github.io/posts/%E5%B9%B4%E9%BE%84%E5%AF%B9%E4%BA%8E%E6%89%8B%E6%9C%BA%E6%B8%B8%E6%88%8F%E7%9A%84%E5%81%8F%E5%A5%BD/</guid>
+			<description>Introduction Preparation Feature Engineering Exploratory Data Analysis Genres and Languages Best chance to increase game popularity is by input other languages beside english and pick the right genres keywords. Here is the list of popular language that game creator add except english and the most frequent genres
+App Store Age Rating Ratings are the responsibility of the app developers when they created new apps/games. Content rating for apps and games help you understand an app’s maturity for the purpose of parental controls.</description>
+			<content type="html"><![CDATA[
+
+<h1 id="introduction">Introduction</h1>
+
+<h1 id="preparation">Preparation</h1>
+
+<h1 id="feature-engineering">Feature Engineering</h1>
+
+<h1 id="exploratory-data-analysis">Exploratory Data Analysis</h1>
+
+<h2 id="genres-and-languages">Genres and Languages</h2>
+
+<p>Best chance to increase game popularity is by input other languages beside english and pick the right genres keywords. Here is the list of popular language that game creator add except english and the most frequent genres</p>
+
+<h2 id="app-store-age-rating">App Store Age Rating</h2>
+
+<p>Ratings are the responsibility of the app developers when they created new apps/games. Content rating for apps and games help you understand an app’s maturity for the purpose of parental controls.</p>
+
+<h3 id="age-group">Age Group</h3>
+
+<p>Let’s see the variability of the age rating in App Store</p>
+
+<p><img src="https://www.kaggleusercontent.com/kf/21540130/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..7f54VwjDkx3ylYDdzdtQdA.sLb7ti5EWdKLDEkiyidGBFghu21uaz9VNIwqU9M4XAJ08w5GfX-L7pzVI05oIo1LwIPlDuAVvGNBo3CyoGdON_jFmoihbSttXa7altECwP5yi9IMwm_HfAhhK3TfNMjL1W8pEL_a1B_Qukwfz33j01TxxTz-MKISW7HHaHtROK4.sWCBJA9FbqR01BMAS6lO-w/__results___files/figure-html/unnamed-chunk-5-1.png" alt="img" /></p>
+
+<p>The age group is divided by 4+, 9+, 12+ and 17+ category. From the graph above, we can see that most of the user has been give review to the most family-friendly games content.</p>
+
+<h3 id="average-rating">Average Rating</h3>
+
+<p><img src="https://www.kaggleusercontent.com/kf/21540130/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..7f54VwjDkx3ylYDdzdtQdA.sLb7ti5EWdKLDEkiyidGBFghu21uaz9VNIwqU9M4XAJ08w5GfX-L7pzVI05oIo1LwIPlDuAVvGNBo3CyoGdON_jFmoihbSttXa7altECwP5yi9IMwm_HfAhhK3TfNMjL1W8pEL_a1B_Qukwfz33j01TxxTz-MKISW7HHaHtROK4.sWCBJA9FbqR01BMAS6lO-w/__results___files/figure-html/unnamed-chunk-6-1.png" alt="img" /></p>
+
+<p>With the average of 4.5 for the apps rating, we can say that most consumer has satisfied with the game experience.</p>
+
+<h3 id="most-and-least-popular-games-by-age-group">Most and Least Popular Games by Age Group</h3>
+
+<p>In case you wonder what game you should try or if you a game developer and what game you should make to become quickly popular, hereby the apps rated for every age group</p>
+
+<p><img src="https://www.kaggleusercontent.com/kf/21540130/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..7f54VwjDkx3ylYDdzdtQdA.sLb7ti5EWdKLDEkiyidGBFghu21uaz9VNIwqU9M4XAJ08w5GfX-L7pzVI05oIo1LwIPlDuAVvGNBo3CyoGdON_jFmoihbSttXa7altECwP5yi9IMwm_HfAhhK3TfNMjL1W8pEL_a1B_Qukwfz33j01TxxTz-MKISW7HHaHtROK4.sWCBJA9FbqR01BMAS6lO-w/__results___files/figure-html/unnamed-chunk-7-1.png" alt="img" /></p>
+
+<p>Note that app ratings are not meant to reflect the intended audience. The ratings are intended to help consumers, especially parents, identify potentially objectionable content that exists within an app.</p>
+]]></content>
+		</item>
+		
+		<item>
 			<title>Does Brexit impact housing market?</title>
 			<link>https://srivendare.github.io/posts/brexit-housing/</link>
 			<pubDate>Thu, 29 Nov 2018 14:00:50 +0800</pubDate>
@@ -169,6 +219,347 @@ distribution pattern.</p>
 <p>There are a number of factors that might account for the remaining 7% variation. For example, seasonal trends impact house sales; nearly triple the average number of houses are sold in the last week of March (right before Tax Day), while fewer than average houses are sold in the last two weeks of December (presumably due to the holidays).</p>
 
 <p>To understand the spatial performance of these linear models, we plot and examine the residuals, as shown in Figure 4 on page 5. (Residuals for median value are in pounds sterling.) No pattern is immediately obvious. This suggests that unexplained variation in house sales may be due to a non-spatial variable, such as seasonal effects.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title></title>
+			<link>https://srivendare.github.io/posts/mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>https://srivendare.github.io/posts/mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+			<description>MySQL 基础知识 本篇文章会整理一下需要的mySQL知识。首先介绍一下数据库的基本知识，首先作为数据分析师基本上使用数据库就可以了。
+数据库是数据存储的集合。
+数据库中包括许多的表，也就是结构化存储数的数据信息。 （这里可以类比Excel中的文件和Sheet）
+**数据库中有两种概念，行（Row），还有列（Column） **
+**SQL PRIMARY KEY： 数据信息是会重复的，主键是表中的唯一标示 **（可以理解成身份证号码）
+ 必须唯一，不强制，但是标准状态下需要有。
+ 每行都有一个Primary Key不可为空，创建后不可修改，删除后也不可重用。
+ 表A中的Key，可以成为表B的字段
+  数据库的类型
+文本，整数，小数点，date（精确到日），timestamp（精确到秒），其余还有布尔值
+==word or phrase==
+** 另外一些概念 **
+分类
+Schemas</description>
+			<content type="html"><![CDATA[
+
+<h4 id="mysql-基础知识">MySQL 基础知识</h4>
+
+<p>本篇文章会整理一下需要的mySQL知识。首先介绍一下数据库的基本知识，首先作为数据分析师基本上使用数据库就可以了。</p>
+
+<p><strong>数据库是数据存储的集合。</strong></p>
+
+<p>数据库中包括许多的表，也就是结构化存储数的数据信息。 （这里可以类比Excel中的文件和Sheet）</p>
+
+<p>**数据库中有两种概念，行（Row），还有列（Column） **</p>
+
+<p>**SQL PRIMARY KEY： 数据信息是会重复的，主键是表中的唯一标示 **（可以理解成身份证号码）</p>
+
+<ul>
+<li><p>必须唯一，不强制，但是标准状态下需要有。</p></li>
+
+<li><p>每行都有一个Primary Key不可为空，创建后不可修改，删除后也不可重用。</p></li>
+
+<li><p>表A中的Key，可以成为表B的字段</p></li>
+</ul>
+
+<p><strong>数据库的类型</strong></p>
+
+<p>文本，整数，小数点，date（精确到日），timestamp（精确到秒），其余还有布尔值</p>
+
+<p>==word or phrase==</p>
+
+<p>** 另外一些概念 **</p>
+
+<p>分类</p>
+
+<p>Schemas</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title></title>
+			<link>https://srivendare.github.io/posts/%E4%B8%80%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88%E7%9A%84%E6%88%90%E9%95%BF%E4%B9%8B%E8%B7%AF/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>https://srivendare.github.io/posts/%E4%B8%80%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88%E7%9A%84%E6%88%90%E9%95%BF%E4%B9%8B%E8%B7%AF/</guid>
+			<description>一个数据分析师的成长之路 https://www.cda.cn/bigdata/3.html
+数据分析师面试怎么做
+如何在笔试/面试中回答数据分析场景相关的问题？分三步走：
+第一步：明确你遇到的场景类型
+企业数据分析场景可分为以下几种：
+经营数据分析：指收入、销量等企业经营活动相关的数据分析；
+销售数据分析：指销售收入、销售额、销售单产等与销售活动直接相关的数据分析：与经营分析的区别是销售分析粒度更细，频次更密
+要求速度更快；
+客户数据分析：即CRM分析，指客户购买额、购买频次、购买偏好等客户产生的相关数据的分析；
+营销/市场数据分析：指企业营销/市场活动的投放、反馈、效果相关数据的分析，运营分析可归入这一类，也可归入产品类；
+产品数据分析：单个产品的数据分析，包括实物产品和服务产品（互联网产品也归入服务产品类）；
+确定场景后，进入第二步：明确分析目标
+对于不同的场景，分析目标是不一致的：
+经营数据分析：监控企业的运行情况，目标是发现企业经营活动中的问题，主要关注点是销量/销售额总体时序变化、地区分布、总体
+单个点变化原因；
+销售数据分析：目标是保证完成销售任务，监测销售效率低的原因，提出解决办法，主要关注时序进度、落后原因、销售单产情况等；
+客户数据分析：目标是深入理解客户，典型方法是RFM模型；
+营销/市场数据分析：目标是了解投放效果，优化投放计划，提升投放效率，关注点主要集中在ROI相关的指标；
+产品数据分析：综合了前边几类分析的内容，分析目标则集中在某个产品上；
+目标明确以后，最后一步：搭建分析体系
+每一个场景里的内容看似复杂，但记住两个核心，即可推导出所有的分析点：
+核心一：绝大多数分析都是针对人（内部人员和客户）、财（收入，支出）、物（产品，服务）三个对象进行的，所有的基础分析指标
+由单个对象或对象间的组合推导出来。
+核心二：做分析时处理指标记住八个字：变化、分布、对比、预测
+变化：指标随时间的变动，表现为增幅（同比、环比等）；
+分布：指标在不同层次上的表现，包括地域分布（省、市、区县、店/网点）、用户群分布（年龄、性别、职业等）、产品分布（如动感地带和全球通）等；
+对比：包括内部对比和外部对比，内部对比包括团队对比（团队A与B的单产对比、销量对比等）、产品线对比（动感地带和全球通的ARPU、用户数、收入对比）；外部对比主要是与市场环境和竞争者对比；这一部分和分布有重叠的地方，但分布更多用于找出好或坏的地方，而对比更偏重于找到好或坏的原因；数据分析培训
+预测：根据现有情况，估计下个分析时段的指标值。
+将两个核心的内容叠加到一起，分析体系基本就建立了。
+我对P值的个人理解是这样的，例如你计算出P值为0.01，那么P值就告诉你，即使你对检验量和总体真实参数的差异宽容到概率为99%的区间，这个检验量还是落在了这个区间以外，因此你就需要怀疑这个总体参数是不是真的你原先设想的那个。
+P值就只是方便你判断检验统计量是否落在拒绝域，犯第一类错误的风险是否低于可以接受的标准，α就是预先给自己定下一个标准，这个风险必须少于多少，才能相信这个检验的结果。
+p-value is the probability we get this sample or a more extreme sample under H0. 这就是学了这么多年，给本科生讲了这么多年的一句核心的话。
+也就是说，如果H0是对的，p就是衡量这个sample奇不奇怪、极不极端的数，所以p很小的时候，我们不太可能得到这种sample（因为它很极端呀），说明如果H0是对的，我们这个sample就太奇怪了，所以拒绝H0。</description>
+			<content type="html"><![CDATA[
+
+<h4 id="一个数据分析师的成长之路">一个数据分析师的成长之路</h4>
+
+<p><a href="https://www.cda.cn/bigdata/3.html">https://www.cda.cn/bigdata/3.html</a></p>
+
+<p><a href="https://link.zhihu.com/?target=http%3A//cda.pinggu.org/view/21422.html">数据分析师面试怎么做</a></p>
+
+<p>如何在笔试/面试中回答<a href="https://link.zhihu.com/?target=http%3A//cda.pinggu.org/">数据分析</a>场景相关的问题？分三步走：</p>
+
+<p>第一步：明确你遇到的场景类型</p>
+
+<p>企业数据分析场景可分为以下几种：</p>
+
+<p>经营数据分析：指收入、销量等企业经营活动相关的数据分析；</p>
+
+<p>销售数据分析：指销售收入、销售额、销售单产等与销售活动直接相关的<a href="https://link.zhihu.com/?target=http%3A//cda.pinggu.org/view/21419.html">数据分析</a>：与经营分析的区别是销售分析粒度更细，频次更密</p>
+
+<p>要求速度更快；</p>
+
+<p>客户数据分析：即CRM分析，指客户购买额、购买频次、购买偏好等客户产生的相关数据的分析；</p>
+
+<p>营销/市场数据分析：指企业营销/市场活动的投放、反馈、效果相关数据的分析，运营分析可归入这一类，也可归入产品类；</p>
+
+<p>产品数据分析：单个产品的数据分析，包括实物产品和服务产品（互联网产品也归入服务产品类）；</p>
+
+<p>确定场景后，进入第二步：明确分析目标</p>
+
+<p>对于不同的场景，分析目标是不一致的：</p>
+
+<p>经营数据分析：监控企业的运行情况，目标是发现企业经营活动中的问题，主要关注点是销量/销售额总体时序变化、地区分布、总体</p>
+
+<p>单个点变化原因；</p>
+
+<p>销售数据分析：目标是保证完成销售任务，监测销售效率低的原因，提出解决办法，主要关注时序进度、落后原因、销售单产情况等；</p>
+
+<p>客户数据分析：目标是深入理解客户，典型方法是RFM模型；</p>
+
+<p>营销/市场数据分析：目标是了解投放效果，优化投放计划，提升投放效率，关注点主要集中在ROI相关的指标；</p>
+
+<p>产品数据分析：综合了前边几类分析的内容，分析目标则集中在某个产品上；</p>
+
+<p>目标明确以后，最后一步：搭建分析体系</p>
+
+<p>每一个场景里的内容看似复杂，但记住两个核心，即可推导出所有的分析点：</p>
+
+<p>核心一：绝大多数分析都是针对人（内部人员和客户）、财（收入，支出）、物（产品，服务）三个对象进行的，所有的基础分析指标</p>
+
+<p>由单个对象或对象间的组合推导出来。</p>
+
+<p>核心二：做分析时处理指标记住八个字：变化、分布、对比、预测</p>
+
+<p>变化：指标随时间的变动，表现为增幅（同比、环比等）；</p>
+
+<p>分布：指标在不同层次上的表现，包括地域分布（省、市、区县、店/网点）、用户群分布（年龄、性别、职业等）、产品分布（如动感地带和全球通）等；</p>
+
+<p>对比：包括内部对比和外部对比，内部对比包括团队对比（团队A与B的单产对比、销量对比等）、产品线对比（动感地带和全球通的ARPU、用户数、收入对比）；外部对比主要是与市场环境和竞争者对比；这一部分和分布有重叠的地方，但分布更多用于找出好或坏的地方，而对比更偏重于找到好或坏的原因；<a href="https://link.zhihu.com/?target=http%3A//cda.pinggu.org/">数据分析培训</a></p>
+
+<p>预测：根据现有情况，估计下个<a href="https://link.zhihu.com/?target=http%3A//cda.pinggu.org/view/21410.html">分析</a>时段的指标值。</p>
+
+<p>将两个核心的内容叠加到一起，分析体系基本就建立了。</p>
+
+<p>我对P值的个人理解是这样的，例如你计算出P值为0.01，那么P值就告诉你，<strong>即使</strong>你对检验量和总体真实参数的差异宽容到概率为99%的区间，这个检验量还是落在了这个区间以外，因此你就需要怀疑这个总体参数是不是真的你原先设想的那个。</p>
+
+<p>P值就只是方便你判断检验统计量是否落在拒绝域，犯第一类错误的风险是否低于可以接受的标准，α就是预先给自己定下一个标准，这个风险必须少于多少，才能相信这个检验的结果。</p>
+
+<p>p-value is the probability we get this sample or a more extreme sample under H0.
+这就是学了这么多年，给本科生讲了这么多年的一句核心的话。</p>
+
+<p>也就是说，如果H0是对的，p就是衡量这个sample奇不奇怪、极不极端的数，所以p很小的时候，我们不太可能得到这种sample（因为它很极端呀），说明如果H0是对的，我们这个sample就太奇怪了，所以拒绝H0。</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title></title>
+			<link>https://srivendare.github.io/posts/%E5%B8%B8%E8%A7%81%E6%A6%82%E7%8E%87%E6%95%B0%E6%8D%AE%E5%88%86%E5%B8%83%E6%A8%A1%E5%BC%8F/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>https://srivendare.github.io/posts/%E5%B8%B8%E8%A7%81%E6%A6%82%E7%8E%87%E6%95%B0%E6%8D%AE%E5%88%86%E5%B8%83%E6%A8%A1%E5%BC%8F/</guid>
+			<description>统计学总结  数值数据
+ 分类数据
+  ###常见概率数据分布模式
+概率的分布只要有离散和连续型变量分布2种
+ 二项分布：只有两种可能性的结果，每次实验的成功失败几率相同，每次实验相互独立。（伯努利是只进行一次实验的二项分布）
+ 柏松分布：离散型的随机分量，预测特定时间在一定时间空间条件下发生的次数，（这个条件在现实中很难保证）条件任何一个时间段（单位区间）事件发生的，概率都是相同并且相互独立的。（概率几何）
+  e.g 一个月内机器损坏的次数，（空间上）公路每天通过的汽车数目，商店人流量预测下次来多少人
+ 正态分布：是一种连续变量分布，受均值和方差影响很大，可以在一个区间内随机取值（标准正态分布）。  ###贝叶斯
+表示分类的准确率</description>
+			<content type="html"><![CDATA[
+
+<h4 id="统计学总结">统计学总结</h4>
+
+<ul>
+<li><p>数值数据</p></li>
+
+<li><p>分类数据</p></li>
+</ul>
+
+<p>###常见概率数据分布模式</p>
+
+<p>概率的分布只要有离散和连续型变量分布2种</p>
+
+<ul>
+<li><p>二项分布：只有两种可能性的结果，每次实验的成功失败几率相同，每次实验相互独立。（伯努利是只进行一次实验的二项分布）</p></li>
+
+<li><p>柏松分布：离散型的随机分量，预测特定时间在一定时间空间条件下发生的次数，（这个条件在现实中很难保证）条件任何一个时间段（单位区间）事件发生的，概率都是相同并且相互独立的。（概率几何）</p></li>
+</ul>
+
+<p>e.g 一个月内机器损坏的次数，（空间上）公路每天通过的汽车数目，商店人流量预测下次来多少人</p>
+
+<ul>
+<li>正态分布：是一种连续变量分布，受均值和方差影响很大，可以在一个区间内随机取值（标准正态分布）。</li>
+</ul>
+
+<p>###贝叶斯</p>
+
+<p>表示分类的准确率</p>
+
+<p><img src="/Users/ruishang/Library/Application Support/typora-user-images/image-20191204160505679.png" alt="image-20191204160505679" /></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title></title>
+			<link>https://srivendare.github.io/posts/%E6%98%AF%E5%90%A6%E6%98%AF%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>https://srivendare.github.io/posts/%E6%98%AF%E5%90%A6%E6%98%AF%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83/</guid>
+			<description>https://zhuanlan.zhihu.com/p/58054302
+在实际研究中，很多时候都需要数据满足正态分布才可以。比如说回归分析，其实做回归分析有一个前提条件即因变量需要满足正态分布性。也比如说方差分析，其有一个潜在的前提假定即因变量Y需要满足正态分布。还有很多种情况，比如T检验，相关分析等等。
+但这种情况往往被分析人员忽略掉，或者是数学基本不够扎实，或者是无论如何数据均不满足正态分布等客观条件，也或者其它情况等。如果说没有满足前提条件，分析的结果会变得不科学严谨，分析结论会受到置疑。
+哪些研究方法需要数据满足正态分布才行呢？以及如果不满足正态分布时应该如何处理呢？接下来会逐步说明
+第一：需要满足正态分布的几类常见研究方法： 常见会涉及五种研究方法，它们对正态性要求相对较高，如果不满足正态性则会有对应的处理。
+线性回归分析
+线性回归分析，很多时候也称回归分析。其对正态性的要求较为严格，包括因变量Y需要满足正态性要求，同时残差也需要满足正态性。如果说因变量Y不满足正态分布，通常情况下有以下几种处理办法。
+第1：对因变量Y取对数处理（包括自然对数和10为底的对数）；这可以在SPSSAU的生成变量功能里面找到；
+第2：如果数据接近于正态分布，则接受其为正态分布性。此种情况较多，因为在研究影响关系时，线性回归最适合，如果不进行线性回归，通常情况下很难有更适合的研究方法。因而很多时候只要数据接受于正态性即可，而不用强求数据完美的正态，事实上在生活中绝对的“正态性”并不存在。使用正态分布检验方法进行验证正态性最为严苛，因而可使用正态分布图直观查看数据分布情况，接近于“正态分布”更符合实际情况；
+第3：加大样本量；有时候数据太少时，即使正态分布的数据，也因为样本小没有办法覆盖各种情况，从而变得不正态，因而加大样本量会减少这种情况产生。
+Pearson相关分析
+Pearson相关分析（也称皮尔逊相关分析，很多时候直接称呼为相关分析），在实际研究中使用最多。其实Pearson相关分析也有着默认的前提条件，即数据满足正态分布性。但现实中的数据很难满足正态分布性，此时建议使用Spearman（斯皮尔曼）相关系数进行研究即可。
+方差分析
+方差分析（这里特指单因素方差分析），其默认有个前提条件是因变量需要符合正态分布性，可能是由于即使非正态分布，方差分析的结果也较为稳健，因而很少有人先进行正态分布性检验。
+事实上方差分析的因变量也需要满足正态分布特质，如果没有满足，则可以使用非参数检验进行检验。具体非参数检验的类型来看，如果X的组别为两组，例如研究人员想知道不同性别学生的购买意愿是否有显著差异，按性别分为男和女共两组，则应该使用MannWhitney统计量，如果组别超过两组，则应该使用Kruskal-Wallis统计量结果。SPSSAU自动为你选择MannWhitney或者Kruskal-Wallis统计量。
+独立T检验
+独立T检验（也称T检验），其默认有个前提条件是因变量需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是MannWhitney检验进行研究。
+单样本T检验
+单样本T检验，其默认前提条件是数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是单样本Wilcoxon检验进行研究。
+配对样本T检验
+配对样本T检验，其默认前提条件是差值数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是单样本Wilcoxon检验进行研究。其实配对样本T检验与单样本T检验的原理是一模一样，无非是进行了一次数据相减（即差值）处理而已，因而其和单样本T检验保持一致。
+第二：理论与现实的“相悖” 从理论上讲，很多研究方法需要满足正态分布特质，但现实情况下，很难满足正态分布性。SPSSAU认为有两点原因。
+1是抽样样本过少，很难cover所有情况，所以导致总体是正态分布，但抽样样本不满足正态分布，比如中国13亿人的身高肯定是正态分布，但抽样100个人可能就不会正态分布；
+2是认知的不一致，事实上正态性是一种数学理论上的分布，实际情况下只要数据分布基本满足“钟形曲线”特征，SPSSAU认为也应该将数据看成是正态分布。
+因而在实际研究过程中，很可能会出现需要满足正态性要求，但是并不满足，此时应该如何处理呢？SPSSAU认为有三种处理方式，如下图：
+SPSSAU整理
+第一种：使用正态分布图直观判断正态分布特质，而不是使用检验方法。原因在于检验方法比较严苛，而现实数据满足“钟形曲线”特征即可；
+第二种：将数据取对数，或者开根号等处理。如果数据值非常大，取对数或者开根号等，会对数据进行“压缩”处理，相对意义上单位会减小，但值的相对意义还是一样，通常情况下，数据会变得相对“正态”一些；此步可使用SPSSAU的“生成变量”功能即可完成。
+第三种：使用其它研究方法。如果是使用方差分析，T检验等，如果不满足正态性，则有对应的非参数检验方法可以使用。如果是非参数检验方法进行差异对比，则应该使用中位数去表述大小差异等，而一般不使用平均值（满足正态分布性时才使用平均值表示整体水平）。当然，SPSSAU均会提供对应的非参数检验方法等，可直接使用。
+第三：正态分布的“检验方法” 上述已经讲了很多关于正态分布的话题，那如何对正态分布性进行检验呢？SPSSAU共提供以下几种检验，如下：
+第一种：图示法（使用SPSSAU的正态图即可，可得到类似如下的图等）
+第二种：检验方法
+SPSSAU结果输出界面
+SPSSAU共提供两种正态性检验方法，包括S-W检验和K-S检验。小样本(小于50)时建议使用S-W检验，大样本(大于50)时建议使用K-S检验；此两个检验的原假设为数据正态分布，因而P值&amp;gt;0.05，说明该项具有正态分布特质；这些均会在SPSSAU的智能分析中默认提供。</description>
+			<content type="html"><![CDATA[
+
+<p><a href="https://zhuanlan.zhihu.com/p/58054302">https://zhuanlan.zhihu.com/p/58054302</a></p>
+
+<p>在实际研究中，很多时候都需要数据满足正态分布才可以。比如说回归分析，其实做回归分析有一个前提条件即因变量需要满足正态分布性。也比如说方差分析，其有一个潜在的前提假定即因变量Y需要满足正态分布。还有很多种情况，比如T检验，相关分析等等。</p>
+
+<p>但这种情况往往被分析人员忽略掉，或者是数学基本不够扎实，或者是无论如何数据均不满足正态分布等客观条件，也或者其它情况等。如果说没有满足前提条件，分析的结果会变得不科学严谨，分析结论会受到置疑。</p>
+
+<p>哪些研究方法需要数据满足正态分布才行呢？以及如果不满足正态分布时应该如何处理呢？接下来会逐步说明</p>
+
+<h3 id="第一-需要满足正态分布的几类常见研究方法"><strong>第一：需要满足正态分布的几类常见研究方法：</strong></h3>
+
+<p>常见会涉及五种研究方法，它们对正态性要求相对较高，如果不满足正态性则会有对应的处理。</p>
+
+<p><img src="https://pic4.zhimg.com/80/v2-d7fe16ca6497827b777c711ae6e1fa3f_hd.png" alt="img" /></p>
+
+<p><strong>线性回归分析</strong></p>
+
+<p>线性回归分析，很多时候也称回归分析。其对正态性的要求较为严格，包括因变量Y需要满足正态性要求，同时残差也需要满足正态性。如果说因变量Y不满足正态分布，通常情况下有以下几种处理办法。</p>
+
+<p>第1：对因变量Y取对数处理（包括自然对数和10为底的对数）；这可以在<a href="https://link.zhihu.com/?target=http%3A//www.spssau.com/%3F100001000">SPSSAU</a>的<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/dataprocessing/generatevariable.html">生成变量</a>功能里面找到；</p>
+
+<p>第2：如果数据接近于正态分布，则接受其为正态分布性。此种情况较多，因为在研究影响关系时，线性回归最适合，如果不进行线性回归，通常情况下很难有更适合的研究方法。因而很多时候只要数据接受于正态性即可，而不用强求数据完美的正态，事实上在生活中绝对的“正态性”并不存在。使用正态分布检验方法进行验证正态性最为严苛，因而可使用正态分布图直观查看数据分布情况，接近于“正态分布”更符合实际情况；</p>
+
+<p>第3：加大样本量；有时候数据太少时，即使正态分布的数据，也因为样本小没有办法覆盖各种情况，从而变得不正态，因而加大样本量会减少这种情况产生。</p>
+
+<p><strong>Pearson相关分析</strong></p>
+
+<p>Pearson相关分析（也称皮尔逊相关分析，很多时候直接称呼为相关分析），在实际研究中使用最多。其实Pearson相关分析也有着默认的前提条件，即数据满足正态分布性。但现实中的数据很难满足正态分布性，此时建议使用Spearman（斯皮尔曼）相关系数进行研究即可。</p>
+
+<p><strong>方差分析</strong></p>
+
+<p>方差分析（这里特指<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/universalmethod/onewayanova.html">单因素方差分析</a>），其默认有个前提条件是因变量需要符合正态分布性，可能是由于即使非正态分布，方差分析的结果也较为稳健，因而很少有人先进行正态分布性检验。</p>
+
+<p>事实上方差分析的因变量也需要满足正态分布特质，如果没有满足，则可以使用非参数检验进行检验。具体<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/universalmethod/nonparametrictest.html">非参数检验</a>的类型来看，如果X的组别为两组，例如研究人员想知道不同性别学生的购买意愿是否有显著差异，按性别分为男和女共两组，则应该使用MannWhitney统计量，如果组别超过两组，则应该使用Kruskal-Wallis统计量结果。<a href="https://link.zhihu.com/?target=http%3A//www.spssau.com/%3F100001000">SPSSAU</a>自动为你选择MannWhitney或者Kruskal-Wallis统计量。</p>
+
+<p><strong>独立T检验</strong></p>
+
+<p>独立T检验（也称<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/universalmethod/independentttest.html">T检验</a>），其默认有个前提条件是因变量需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是MannWhitney检验进行研究。</p>
+
+<p><strong>单样本T检验</strong></p>
+
+<p>单样本T检验，其默认前提条件是数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/medicalmethod/onesamplewilcoxon.html">单样本Wilcoxon检验</a>进行研究。</p>
+
+<p><strong>配对样本T检验</strong></p>
+
+<p>配对样本T检验，其默认前提条件是差值数据需要符合正态分布性，如果不满足，此时可考虑使用非参数检验，具体来讲应该是<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/medicalmethod/onesamplewilcoxon.html">单样本Wilcoxon检验</a>进行研究。其实配对样本T检验与单样本T检验的原理是一模一样，无非是进行了一次数据相减（即差值）处理而已，因而其和单样本T检验保持一致。</p>
+
+<h2 id="第二-理论与现实的-相悖"><strong>第二：理论与现实的“相悖”</strong></h2>
+
+<p>从理论上讲，很多研究方法需要满足正态分布特质，但现实情况下，很难满足正态分布性。SPSSAU认为有两点原因。</p>
+
+<p>1是抽样样本过少，很难cover所有情况，所以导致总体是正态分布，但抽样样本不满足正态分布，比如中国13亿人的身高肯定是正态分布，但抽样100个人可能就不会正态分布；</p>
+
+<p>2是认知的不一致，事实上正态性是一种数学理论上的分布，实际情况下只要数据分布基本满足“钟形曲线”特征，SPSSAU认为也应该将数据看成是正态分布。</p>
+
+<p>因而在实际研究过程中，很可能会出现需要满足正态性要求，但是并不满足，此时应该如何处理呢？SPSSAU认为有三种处理方式，如下图：</p>
+
+<p><img src="https://pic4.zhimg.com/80/v2-afc8dc181120bb85df9382aa1e53f07f_hd.png" alt="img" />SPSSAU整理</p>
+
+<p>第一种：使用正态分布图直观判断正态分布特质，而不是使用检验方法。原因在于检验方法比较严苛，而现实数据满足“钟形曲线”特征即可；</p>
+
+<p>第二种：将数据取对数，或者开根号等处理。如果数据值非常大，取对数或者开根号等，会对数据进行“压缩”处理，相对意义上单位会减小，但值的相对意义还是一样，通常情况下，数据会变得相对“正态”一些；此步可使用SPSSAU的“<a href="https://link.zhihu.com/?target=https%3A//spssau.com/front/spssau/helps/dataprocessing/generatevariable.html">生成变量</a>”功能即可完成。</p>
+
+<p>第三种：使用其它研究方法。如果是使用方差分析，T检验等，如果不满足正态性，则有对应的非参数检验方法可以使用。如果是非参数检验方法进行差异对比，则应该使用中位数去表述大小差异等，而一般不使用平均值（满足正态分布性时才使用平均值表示整体水平）。当然，SPSSAU均会提供对应的非参数检验方法等，可直接使用。</p>
+
+<h2 id="第三-正态分布的-检验方法"><strong>第三：正态分布的“检验方法”</strong></h2>
+
+<p>上述已经讲了很多关于正态分布的话题，那如何对正态分布性进行检验呢？SPSSAU共提供以下几种检验，如下：</p>
+
+<p><strong>第一种：图示法（使用SPSSAU的正态图即可，可得到类似如下的图等）</strong></p>
+
+<p><img src="https://pic3.zhimg.com/80/v2-3ed2947201445b0b1dce81382be10f5e_hd.png" alt="img" /></p>
+
+<p><img src="https://pic4.zhimg.com/80/v2-a96885cba8b1ef4a9b0d99eca06485e3_hd.png" alt="img" /></p>
+
+<p><strong>第二种：检验方法</strong></p>
+
+<p><img src="https://pic1.zhimg.com/80/v2-5b57617e6e5e5933acb4a908d83e2878_hd.png" alt="img" />SPSSAU结果输出界面</p>
+
+<p>SPSSAU共提供两种正态性检验方法，包括S-W检验和K-S检验。小样本(小于50)时建议使用S-W检验，大样本(大于50)时建议使用K-S检验；此两个检验的原假设为数据正态分布，因而P值&gt;0.05，说明该项具有正态分布特质；这些均会在SPSSAU的智能分析中默认提供。</p>
 ]]></content>
 		</item>
 		
