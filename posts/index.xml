@@ -473,6 +473,62 @@ dim(m1)
 		</item>
 		
 		<item>
+			<title>MySQL基础知识持续更新中...</title>
+			<link>https://srivendare.github.io/posts/mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+			<pubDate>Wed, 05 Sep 2018 17:00:50 +0800</pubDate>
+			
+			<guid>https://srivendare.github.io/posts/mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+			<description>MySQL 基础知识 本篇文章会整理一下需要的mySQL知识，方便以后复习，主要来源是博主个人网上冲浪习得，资源包括不限于知乎，Quora，Medium&amp;hellip; 首先介绍一下数据库的基本知识，首先作为数据分析师基本上使用数据库就可以了。
+数据库是数据存储的集合。
+数据库中包括许多的表，也就是结构化存储数的数据信息。 （这里可以类比Excel中的文件和Sheet）
+**数据库中有两种概念，行（Row），还有列（Column） **
+**SQL PRIMARY KEY： 数据信息是会重复的，主键是表中的唯一标示 **（可以理解成身份证号码）
+ 必须唯一，不强制，但是标准状态下需要有。
+ 每行都有一个Primary Key不可为空，创建后不可修改，删除后也不可重用。
+ 表A中的Key，可以成为表B的字段
+  数据库的类型
+文本，整数，小数点，date（精确到日），timestamp（精确到秒），其余还有布尔值
+==word or phrase==
+** 另外一些概念 **
+分类
+Schemas</description>
+			<content type="html"><![CDATA[
+
+<h4 id="mysql-基础知识">MySQL 基础知识</h4>
+
+<p>本篇文章会整理一下需要的mySQL知识，方便以后复习，主要来源是博主个人网上冲浪习得，资源包括不限于知乎，Quora，Medium&hellip; 首先介绍一下数据库的基本知识，首先作为数据分析师基本上使用数据库就可以了。</p>
+
+<p><strong>数据库是数据存储的集合。</strong></p>
+
+<p>数据库中包括许多的表，也就是结构化存储数的数据信息。 （这里可以类比Excel中的文件和Sheet）</p>
+
+<p>**数据库中有两种概念，行（Row），还有列（Column） **</p>
+
+<p>**SQL PRIMARY KEY： 数据信息是会重复的，主键是表中的唯一标示 **（可以理解成身份证号码）</p>
+
+<ul>
+<li><p>必须唯一，不强制，但是标准状态下需要有。</p></li>
+
+<li><p>每行都有一个Primary Key不可为空，创建后不可修改，删除后也不可重用。</p></li>
+
+<li><p>表A中的Key，可以成为表B的字段</p></li>
+</ul>
+
+<p><strong>数据库的类型</strong></p>
+
+<p>文本，整数，小数点，date（精确到日），timestamp（精确到秒），其余还有布尔值</p>
+
+<p>==word or phrase==</p>
+
+<p>** 另外一些概念 **</p>
+
+<p>分类</p>
+
+<p>Schemas</p>
+]]></content>
+		</item>
+		
+		<item>
 			<title></title>
 			<link>https://srivendare.github.io/posts/docs/%E4%B8%80%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88%E7%9A%84%E6%88%90%E9%95%BF%E4%B9%8B%E8%B7%AF/</link>
 			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -702,62 +758,6 @@ ovince_city<span class="o">)</span> +
           legend.text.align<span class="o">=</span><span class="m">1</span>
 <span class="o">)</span></code></pre></div>
 <p><img src="http://wx4.sinaimg.cn/mw690/000a894fgy1g1vq9rijhrj20u00vqaij.jpg" width="450px" /></p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>MySQL的基础知识（持续更新）</title>
-			<link>https://srivendare.github.io/posts/mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
-			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-			
-			<guid>https://srivendare.github.io/posts/mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
-			<description>MySQL 基础知识 本篇文章会整理一下需要的mySQL知识，方便以后复习，主要来源是博主个人网上冲浪习得，资源包括不限于知乎，Quora，Medium&amp;hellip; 首先介绍一下数据库的基本知识，首先作为数据分析师基本上使用数据库就可以了。
-数据库是数据存储的集合。
-数据库中包括许多的表，也就是结构化存储数的数据信息。 （这里可以类比Excel中的文件和Sheet）
-**数据库中有两种概念，行（Row），还有列（Column） **
-**SQL PRIMARY KEY： 数据信息是会重复的，主键是表中的唯一标示 **（可以理解成身份证号码）
- 必须唯一，不强制，但是标准状态下需要有。
- 每行都有一个Primary Key不可为空，创建后不可修改，删除后也不可重用。
- 表A中的Key，可以成为表B的字段
-  数据库的类型
-文本，整数，小数点，date（精确到日），timestamp（精确到秒），其余还有布尔值
-==word or phrase==
-** 另外一些概念 **
-分类
-Schemas</description>
-			<content type="html"><![CDATA[
-
-<h4 id="mysql-基础知识">MySQL 基础知识</h4>
-
-<p>本篇文章会整理一下需要的mySQL知识，方便以后复习，主要来源是博主个人网上冲浪习得，资源包括不限于知乎，Quora，Medium&hellip; 首先介绍一下数据库的基本知识，首先作为数据分析师基本上使用数据库就可以了。</p>
-
-<p><strong>数据库是数据存储的集合。</strong></p>
-
-<p>数据库中包括许多的表，也就是结构化存储数的数据信息。 （这里可以类比Excel中的文件和Sheet）</p>
-
-<p>**数据库中有两种概念，行（Row），还有列（Column） **</p>
-
-<p>**SQL PRIMARY KEY： 数据信息是会重复的，主键是表中的唯一标示 **（可以理解成身份证号码）</p>
-
-<ul>
-<li><p>必须唯一，不强制，但是标准状态下需要有。</p></li>
-
-<li><p>每行都有一个Primary Key不可为空，创建后不可修改，删除后也不可重用。</p></li>
-
-<li><p>表A中的Key，可以成为表B的字段</p></li>
-</ul>
-
-<p><strong>数据库的类型</strong></p>
-
-<p>文本，整数，小数点，date（精确到日），timestamp（精确到秒），其余还有布尔值</p>
-
-<p>==word or phrase==</p>
-
-<p>** 另外一些概念 **</p>
-
-<p>分类</p>
-
-<p>Schemas</p>
 ]]></content>
 		</item>
 		

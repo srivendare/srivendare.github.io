@@ -113,6 +113,28 @@ The age group is divided by 4+, 9+, 12+ and 17+ category. From the graph above, 
     </item>
     
     <item>
+      <title>MySQL基础知识持续更新中...</title>
+      <link>https://srivendare.github.io/posts/mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Wed, 05 Sep 2018 17:00:50 +0800</pubDate>
+      
+      <guid>https://srivendare.github.io/posts/mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description>MySQL 基础知识 本篇文章会整理一下需要的mySQL知识，方便以后复习，主要来源是博主个人网上冲浪习得，资源包括不限于知乎，Quora，Medium&amp;hellip; 首先介绍一下数据库的基本知识，首先作为数据分析师基本上使用数据库就可以了。
+数据库是数据存储的集合。
+数据库中包括许多的表，也就是结构化存储数的数据信息。 （这里可以类比Excel中的文件和Sheet）
+**数据库中有两种概念，行（Row），还有列（Column） **
+**SQL PRIMARY KEY： 数据信息是会重复的，主键是表中的唯一标示 **（可以理解成身份证号码）
+ 必须唯一，不强制，但是标准状态下需要有。
+ 每行都有一个Primary Key不可为空，创建后不可修改，删除后也不可重用。
+ 表A中的Key，可以成为表B的字段
+  数据库的类型
+文本，整数，小数点，date（精确到日），timestamp（精确到秒），其余还有布尔值
+==word or phrase==
+** 另外一些概念 **
+分类
+Schemas</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://srivendare.github.io/posts/docs/%E4%B8%80%E4%B8%AA%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88%E7%9A%84%E6%88%90%E9%95%BF%E4%B9%8B%E8%B7%AF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -170,28 +192,6 @@ listings - Detailed listings attributes including price (continuous), location, 
       
       <guid>https://srivendare.github.io/posts/bubble-chart/</guid>
       <description>Import Data #Import China shapefile: china_map&amp;lt;-readOGR(&amp;#34;/Users/apple/Desktop/CASA/GIS/As 1/DataWarehouse-master/Rstudy /CHN_adm/bou2_4p.shp&amp;#34;)data1&amp;lt;- china_map@data data2&amp;lt;- data.frame(id=row.names(data1),data1) china_map1 &amp;lt;- fortify(china_map)#Transffom and join the data: china_map1 &amp;lt;- fortify(china_map) china_map_data &amp;lt;- join(china_map1,data2, type = &amp;#34;full&amp;#34;) mydata &amp;lt;- read.csv(&amp;#34;/Users/apple/Desktop/CASA/GIS/As 1/drnum.ke.csv&amp;#34;) china_data &amp;lt;- join(china_map_data, mydata, type=&amp;#34;full&amp;#34;) #Get the province coordinates : province_city &amp;lt;- read.csv(&amp;#34;/Users/apple/Desktop/CASA/GIS/As 1/chinaprovince.ke.csv &amp;#34;) # example 1 : Point chart on map ggplot(china_data,aes(long,lat))+ geom_polygon(aes(group=group),fill=&amp;#34;white&amp;#34;,colour=&amp;#34;grey60&amp;#34;)+ geom_point(data=province_city,aes(x=jd,y=wd),colour=&amp;#34;red&amp;#34;)+ coord_map(&amp;#34;polyconic&amp;#34;) + theme( panel.grid = element_blank(), panel.background = element_blank(), axis.text = element_blank(), axis.</description>
-    </item>
-    
-    <item>
-      <title>MySQL的基础知识（持续更新）</title>
-      <link>https://srivendare.github.io/posts/mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://srivendare.github.io/posts/mysql-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
-      <description>MySQL 基础知识 本篇文章会整理一下需要的mySQL知识，方便以后复习，主要来源是博主个人网上冲浪习得，资源包括不限于知乎，Quora，Medium&amp;hellip; 首先介绍一下数据库的基本知识，首先作为数据分析师基本上使用数据库就可以了。
-数据库是数据存储的集合。
-数据库中包括许多的表，也就是结构化存储数的数据信息。 （这里可以类比Excel中的文件和Sheet）
-**数据库中有两种概念，行（Row），还有列（Column） **
-**SQL PRIMARY KEY： 数据信息是会重复的，主键是表中的唯一标示 **（可以理解成身份证号码）
- 必须唯一，不强制，但是标准状态下需要有。
- 每行都有一个Primary Key不可为空，创建后不可修改，删除后也不可重用。
- 表A中的Key，可以成为表B的字段
-  数据库的类型
-文本，整数，小数点，date（精确到日），timestamp（精确到秒），其余还有布尔值
-==word or phrase==
-** 另外一些概念 **
-分类
-Schemas</description>
     </item>
     
   </channel>
